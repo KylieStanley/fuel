@@ -1,8 +1,9 @@
 import React from 'react'
-import Search from './Search'
-import CardContainer from './CardContainer'
-import Home from './Home'
+import Search from '../Search'
+import CardContainer from '../containers/CardContainer'
+import Home from '../Home'
 import { Route } from 'react-router-dom'
+
 
 
 const MainContainer = () => {

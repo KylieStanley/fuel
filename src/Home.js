@@ -1,6 +1,6 @@
 import React from 'react'
 import Search from './Search'
-import CardContainer from './CardContainer'
+import CardContainer from './containers/CardContainer'
 
 const Home = () => {
 	return (
