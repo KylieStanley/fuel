@@ -1,0 +1,29 @@
+.splash {
+	background: url('../utils/background.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: repeat;
+	min-height: 100vh;	
+	position: relative;
+	width: 100vw;
+	overflow-x: hidden;
+	align-items: center;
+	display: flex;
+	justify-content: center;
+}
+
+.overlay {
+	position: fixed;
+	opacity: .7;
+	height: 100%;
+	width: 100%;
+	background-color: white;
+}
+
+.splash-green {
+	height: 100%;
+	width: 150%;
+	position: absolute;
+	background-color: #A7FFC0;
+	transform: rotate(-27deg) translateX(-55px) translateY(-480px);
+}

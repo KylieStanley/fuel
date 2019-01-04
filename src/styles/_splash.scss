@@ -1,41 +1,10 @@
-.splash {
-	background: url('../utils/background.jpg');
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
-	height: 100vh;
-	position: relative;
-	width: 100vw;
-	overflow: hidden;
-}
-
-.ovrlay {
-	position: absolute;
-	opacity: .7;
-	height: 100%;
-	width: 100%;
-	background-color: white;
-}
-
-.splash-green {
-	height: 100%;
-	width: 150%;
-	position: absolute;
-	background-color: #A7FFC0;
-	transform: rotate(-27deg) translateX(-55px) translateY(-600px);
-}
-
 .splash-text {
 	align-items: center;
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
-	left: 50%;
-	position: absolute;
 	width: 650px;
+	position: absolute;
 	z-index: 2;
-  top: 44%;
-  transform: translate(-50%,-50%);
 }
 
 .splash-btn {
@@ -50,6 +19,6 @@
   outline: none;
 }
 
-i {
+.fa-caret-right {
 	margin-left: 3px;
 }

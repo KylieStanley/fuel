@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
-import './App.css';
+import './styles/main.scss';
 import { Route, NavLink } from 'react-router-dom'
 import Splash from './Splash'
-import Main from './Main'
+import Home from './Home'
+import MainContainer from './MainContainer'
 
 
 class App extends Component {
@@ -12,9 +13,12 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App">
+    <div className="splash">
+      <div className="overlay"></div>
+      <div className="splash-green"></div>
         <Route exact path='/' component={ Splash } />
-        <Route exact path='/main' component={ Main } />
+        <Route exact path='/main' component={ MainContainer } />
+        <Route exact path='/home' component={ Home } />
       </div>
     );
   }
