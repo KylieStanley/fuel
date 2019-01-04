@@ -1,0 +1,55 @@
+.splash {
+	background: url('../utils/background.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 100vh;
+	position: relative;
+	width: 100vw;
+	overflow: hidden;
+}
+
+.ovrlay {
+	position: absolute;
+	opacity: .7;
+	height: 100%;
+	width: 100%;
+	background-color: white;
+}
+
+.splash-green {
+	height: 100%;
+	width: 150%;
+	position: absolute;
+	background-color: #A7FFC0;
+	transform: rotate(-27deg) translateX(-55px) translateY(-600px);
+}
+
+.splash-text {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	left: 50%;
+	position: absolute;
+	width: 650px;
+	z-index: 2;
+  top: 44%;
+  transform: translate(-50%,-50%);
+}
+
+.splash-btn {
+  background-color: #A7FFC0;
+  border-radius: 30px;
+  box-shadow: 1px 1px 2px 0px #00000057;
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 22px auto;
+  padding: 8px;
+  width: 175px;
+  outline: none;
+}
+
+i {
+	margin-left: 3px;
+}
