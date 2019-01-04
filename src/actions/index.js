@@ -8,14 +8,14 @@ export const hasErrored = (message) => ({
    message
 })
 
-export const addFavorite = (fave) => ({
+export const addFavorite = (favorite) => ({
    type: 'ADD_FAVORITE',
-   fave
+   favorite
 })
 
-export const removeFavorite = (fave) => ({
+export const removeFavorite = (favorite) => ({
    type: 'REMOVE_FAVORITE',
-   fave
+   favorite
 })
 
 export const fetchRecipeSuccess = (recipes) => ({

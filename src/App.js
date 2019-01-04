@@ -3,7 +3,7 @@ import './styles/main.scss';
 import { Route, NavLink } from 'react-router-dom'
 import Splash from './Splash'
 import Home from './Home'
-import MainContainer from './components/MainContainer'
+import MainContainer from './containers/MainContainer'
 
 
 class App extends Component {
