@@ -9,7 +9,7 @@ import * as actions from '../actions'
 import { apiId, apiKey } from '../apiKey'
 
 
-class Main extends Component {
+export class Main extends Component {
 
 	componentDidMount() {
 		let url = `https://api.edamam.com/search?q=ma&app_id=${apiId}&app_key=${apiKey}&from=0&to=30`
@@ -35,7 +35,7 @@ export const mapStateToProps = (state) => ({
 })
 
 export const mapDispatchToProps = (dispatch) => ({
-  fetchRecipes: () => dispatch(fetchRecipes())
+  fetchRecipes: (url) => dispatch(fetchRecipes(url))
 })
 
 export default connect(mapStateToProps, mapDispatchToProps)(Main)
