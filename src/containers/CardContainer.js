@@ -10,7 +10,7 @@ const CardContainer = (props) => {
 		<div className="card-container">
 			{
 				props.recipes.map(recipe => {
-					return <Card />
+					return <Card recipe={recipe}/>
 				})
 			}
 		</div>

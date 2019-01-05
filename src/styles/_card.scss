@@ -1,6 +1,38 @@
 .card {
-	width: 200px;
+	border: 1px solid #545454;
+	box-shadow: 1px 2px 5px 1px #545454;
+	display: grid;
+	grid-template-rows: 110px 1fr;
 	height: 300px;
-	border: 2px solid black;
 	margin: 8px 0;
+	width: 200px;
 }
+
+.image {
+	background-size: cover;
+	background-position: center;
+	display: flex;
+	justify-content: flex-end;
+}
+
+.recipe-info {
+	padding: 5px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-direction: column;
+	text-align: center;
+}
+
+.card-bottom {
+	display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  width: 100%;
+}
+
+.fa-heart {
+	margin: 5px;
+	font-size: 1.4rem;
+}
+

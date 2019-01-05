@@ -7,7 +7,7 @@
 
 @import url('https://fonts.googleapis.com/css?family=Ropa+Sans');
 
-h1, h2, h3, button, input {
+h1, h2, h3, button, input, p {
 	color: #232323;
 	font-family: 'Ropa Sans', sans-serif;
 	font-weight: 200;
@@ -33,6 +33,14 @@ span {
 	margin-left: 5px
 }
 
+button {
+	background-color: #ffffff00;
+	border: none;
+	box-shadow: none;
+	cursor: pointer;
+	padding: 0;
+}
+
 .main-container {
 	display: grid;
 	position: absolute;
@@ -44,7 +52,7 @@ span {
 .main-text {
 	display: flex;
 	flex-direction: column;
-	margin: 10px;
+	margin: 15px;
 }
 
 .fuel {
