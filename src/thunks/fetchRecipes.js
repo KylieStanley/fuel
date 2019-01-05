@@ -2,8 +2,7 @@ import { isLoading, hasErrored, fetchRecipeSuccess } from '../actions'
 import { apiKey, apiId } from '../apiKey'
 import cleanRecipes from '../helper.js'
 
-export const fetchRecipes = () => {
-  let url = `https://api.edamam.com/search?q=ma&app_id=${apiId}&app_key=${apiKey}&from=0&to=30`
+export const fetchRecipes = (url) => {
    return async (dispatch) =>  {
     try {
       dispatch(isLoading(true))

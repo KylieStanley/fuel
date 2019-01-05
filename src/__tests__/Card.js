@@ -4,9 +4,14 @@ import Card from '../Card'
 
 describe('Card', () => {
   let wrapper
+  let mockRecipe
 
   beforeEach(() => {
-    wrapper = shallow(<Card />)
+  	mockRecipe = {name: 'chicken pasta', url: 'chicken.jpg'}
+    wrapper = shallow(
+    	<Card 
+    		recipe={mockRecipe}
+    	/>)
   })
 
   it('should match the snapshot', () => {

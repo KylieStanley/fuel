@@ -10,8 +10,9 @@ import * as actions from '../actions'
 
 class MainContainer extends Component {
 
-	async componentDidMount() {
-		await this.props.fetchRecipes()
+	componentDidMount() {
+		let url = `https://api.edamam.com/search?q=ma&app_id=${apiId}&app_key=${apiKey}&from=0&to=30`
+		this.props.fetchRecipes(url)
 	}
 
 	render() {
