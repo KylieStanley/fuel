@@ -5,7 +5,7 @@ import { connect } from 'react-redux'
 import * as actions from '../actions'
 
 
-const CardContainer = (props) => {
+export const CardContainer = (props) => {
 	return (
 		<div className="card-container">
 			{
