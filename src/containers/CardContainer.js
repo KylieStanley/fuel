@@ -1,11 +1,13 @@
 import React from 'react'
-import Card from '../Card'
+import Card from './Card'
 import '../styles/main.scss';
 import { connect } from 'react-redux'
-import * as actions from '../actions'
 
 
 export const CardContainer = (props) => {
+
+
+
 	return (
 		<div className="card-container">
 			{
@@ -18,7 +20,8 @@ export const CardContainer = (props) => {
 }
 
 export const mapStateToProps = (state) => ({
-	recipes: state.recipes
+	recipes: state.recipes,
+	favorites: state.favorites
 })
 
 export default connect(mapStateToProps)(CardContainer)

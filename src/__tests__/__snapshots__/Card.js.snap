@@ -3,7 +3,7 @@
 exports[`Card should match the snapshot 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <Card
+  Symbol(enzyme.__unrendered__): <Connect(Card)
     recipe={
       Object {
         "name": "chicken pasta",
@@ -22,307 +22,59 @@ ShallowWrapper {
   Symbol(enzyme.__node__): Object {
     "instance": null,
     "key": undefined,
-    "nodeType": "host",
+    "nodeType": "function",
     "props": Object {
-      "children": Array [
-        <div
-          className="image"
-          style={
-            Object {
-              "backgroundImage": "url(undefined)",
-            }
-          }
-        />,
-        <div
-          className="recipe-info"
-        >
-          <h3>
-            chicken pasta
-          </h3>
-          <div
-            className="card-bottom"
-          >
-            <button
-              className="fave-btn"
-            >
-              <i
-                className="far fa-heart"
-              />
-            </button>
-            <p />
-          </div>
-        </div>,
-      ],
-      "className": "card",
+      "children": [Function],
     },
     "ref": null,
-    "rendered": Array [
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "className": "image",
-          "style": Object {
-            "backgroundImage": "url(undefined)",
-          },
+    "rendered": [Function],
+    "type": Object {
+      "$$typeof": Symbol(react.context),
+      "_calculateChangedBits": null,
+      "_context": Object {
+        "$$typeof": Symbol(react.context),
+        "Consumer": [Circular],
+        "Provider": Object {
+          "$$typeof": Symbol(react.provider),
+          "_context": [Circular],
         },
-        "ref": null,
-        "rendered": null,
-        "type": "div",
+        "_calculateChangedBits": null,
+        "_currentRenderer": null,
+        "_currentRenderer2": null,
+        "_currentValue": null,
+        "_currentValue2": null,
+        "_threadCount": 0,
       },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": Array [
-            <h3>
-              chicken pasta
-            </h3>,
-            <div
-              className="card-bottom"
-            >
-              <button
-                className="fave-btn"
-              >
-                <i
-                  className="far fa-heart"
-                />
-              </button>
-              <p />
-            </div>,
-          ],
-          "className": "recipe-info",
-        },
-        "ref": null,
-        "rendered": Array [
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": "chicken pasta",
-            },
-            "ref": null,
-            "rendered": "chicken pasta",
-            "type": "h3",
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": Array [
-                <button
-                  className="fave-btn"
-                >
-                  <i
-                    className="far fa-heart"
-                  />
-                </button>,
-                <p />,
-              ],
-              "className": "card-bottom",
-            },
-            "ref": null,
-            "rendered": Array [
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "host",
-                "props": Object {
-                  "children": <i
-                    className="far fa-heart"
-                  />,
-                  "className": "fave-btn",
-                },
-                "ref": null,
-                "rendered": Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "host",
-                  "props": Object {
-                    "className": "far fa-heart",
-                  },
-                  "ref": null,
-                  "rendered": null,
-                  "type": "i",
-                },
-                "type": "button",
-              },
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "host",
-                "props": Object {
-                  "children": undefined,
-                },
-                "ref": null,
-                "rendered": null,
-                "type": "p",
-              },
-            ],
-            "type": "div",
-          },
-        ],
-        "type": "div",
-      },
-    ],
-    "type": "div",
+    },
   },
   Symbol(enzyme.__nodes__): Array [
     Object {
       "instance": null,
       "key": undefined,
-      "nodeType": "host",
+      "nodeType": "function",
       "props": Object {
-        "children": Array [
-          <div
-            className="image"
-            style={
-              Object {
-                "backgroundImage": "url(undefined)",
-              }
-            }
-          />,
-          <div
-            className="recipe-info"
-          >
-            <h3>
-              chicken pasta
-            </h3>
-            <div
-              className="card-bottom"
-            >
-              <button
-                className="fave-btn"
-              >
-                <i
-                  className="far fa-heart"
-                />
-              </button>
-              <p />
-            </div>
-          </div>,
-        ],
-        "className": "card",
+        "children": [Function],
       },
       "ref": null,
-      "rendered": Array [
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "className": "image",
-            "style": Object {
-              "backgroundImage": "url(undefined)",
-            },
+      "rendered": [Function],
+      "type": Object {
+        "$$typeof": Symbol(react.context),
+        "_calculateChangedBits": null,
+        "_context": Object {
+          "$$typeof": Symbol(react.context),
+          "Consumer": [Circular],
+          "Provider": Object {
+            "$$typeof": Symbol(react.provider),
+            "_context": [Circular],
           },
-          "ref": null,
-          "rendered": null,
-          "type": "div",
+          "_calculateChangedBits": null,
+          "_currentRenderer": null,
+          "_currentRenderer2": null,
+          "_currentValue": null,
+          "_currentValue2": null,
+          "_threadCount": 0,
         },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": Array [
-              <h3>
-                chicken pasta
-              </h3>,
-              <div
-                className="card-bottom"
-              >
-                <button
-                  className="fave-btn"
-                >
-                  <i
-                    className="far fa-heart"
-                  />
-                </button>
-                <p />
-              </div>,
-            ],
-            "className": "recipe-info",
-          },
-          "ref": null,
-          "rendered": Array [
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": "chicken pasta",
-              },
-              "ref": null,
-              "rendered": "chicken pasta",
-              "type": "h3",
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": Array [
-                  <button
-                    className="fave-btn"
-                  >
-                    <i
-                      className="far fa-heart"
-                    />
-                  </button>,
-                  <p />,
-                ],
-                "className": "card-bottom",
-              },
-              "ref": null,
-              "rendered": Array [
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "host",
-                  "props": Object {
-                    "children": <i
-                      className="far fa-heart"
-                    />,
-                    "className": "fave-btn",
-                  },
-                  "ref": null,
-                  "rendered": Object {
-                    "instance": null,
-                    "key": undefined,
-                    "nodeType": "host",
-                    "props": Object {
-                      "className": "far fa-heart",
-                    },
-                    "ref": null,
-                    "rendered": null,
-                    "type": "i",
-                  },
-                  "type": "button",
-                },
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "host",
-                  "props": Object {
-                    "children": undefined,
-                  },
-                  "ref": null,
-                  "rendered": null,
-                  "type": "p",
-                },
-              ],
-              "type": "div",
-            },
-          ],
-          "type": "div",
-        },
-      ],
-      "type": "div",
+      },
     },
   ],
   Symbol(enzyme.__options__): Object {

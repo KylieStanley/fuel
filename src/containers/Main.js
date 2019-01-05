@@ -5,7 +5,6 @@ import Home from '../Home'
 import { Route } from 'react-router-dom'
 import { fetchRecipes } from '../thunks/fetchRecipes'
 import { connect } from 'react-redux'
-import * as actions from '../actions'
 import { apiId, apiKey } from '../apiKey'
 
 

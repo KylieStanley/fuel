@@ -7,9 +7,6 @@ import Main from './containers/Main'
 
 
 class App extends Component {
-  constructor() {
-    super()
-  }
 
   render() {
     return (
@@ -23,6 +20,5 @@ class App extends Component {
     );
   }
 }
-
 
 export default App;
