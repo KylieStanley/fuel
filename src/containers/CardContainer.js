@@ -8,7 +8,11 @@ import * as actions from '../actions'
 const CardContainer = (props) => {
 	return (
 		<div className="card-container">
-			<Card />
+			{
+				props.recipes.map(recipe => {
+					return <Card />
+				})
+			}
 		</div>
 	)
 }

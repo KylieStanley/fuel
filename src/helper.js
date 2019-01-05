@@ -3,8 +3,9 @@ const cleanRecipes = (recipes) => {
 		bookmark: currentItem.bookmark,
 		name: currentItem.recipe.label,
 		yield: currentItem.recipe.yield,
-		calories: currentItem.recipe.calories / currentItem.recipe.yield,
-		recipe: currentItem.recipe.label
+		calories: (currentItem.recipe.calories / currentItem.recipe.yield),
+		recipe: currentItem.recipe.label,
+		dietLabel: currentItem.recipe.dietLabels
 	}))
 }
 
