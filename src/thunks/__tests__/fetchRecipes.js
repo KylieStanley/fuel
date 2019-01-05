@@ -11,7 +11,6 @@ describe('fetchRecipes', () => {
 
 	beforeEach(() => {
 		mockRecipeFetch = [{
-			bookmark: false,
 			recipe: {
 			label: 'chicken',
 			yield: 4,
@@ -22,7 +21,6 @@ describe('fetchRecipes', () => {
 		}}]
 
 		mockRecipes = [{
-			bookmark: false,
 			name: 'chicken',
 			yield: 4,
 			calories: 25,
