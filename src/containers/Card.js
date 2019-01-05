@@ -38,7 +38,6 @@ export const Card = (props) => {
 }
 
 export const mapStateToProps = (state) => ({
-	recipes: state.recipes,
 	favorites: state.favorites
 })
 
