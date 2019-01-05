@@ -3,7 +3,7 @@ import './styles/main.scss';
 import { Route, NavLink } from 'react-router-dom'
 import Splash from './Splash'
 import Home from './Home'
-import MainContainer from './containers/MainContainer'
+import Main from './containers/Main'
 
 
 class App extends Component {
@@ -17,7 +17,7 @@ class App extends Component {
       <div className="overlay"></div>
       <div className="splash-green"></div>
         <Route exact path='/' component={ Splash } />
-        <Route exact path='/main' component={ MainContainer } />
+        <Route exact path='/main' component={ Main } />
         <Route exact path='/home' component={ Home } />
       </div>
     );

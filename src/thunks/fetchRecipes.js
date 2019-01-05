@@ -1,5 +1,4 @@
 import { isLoading, hasErrored, fetchRecipeSuccess } from '../actions'
-import { apiKey, apiId } from '../apiKey'
 import cleanRecipes from '../helper.js'
 
 export const fetchRecipes = (url) => {

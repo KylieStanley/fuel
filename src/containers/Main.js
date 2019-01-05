@@ -6,9 +6,10 @@ import { Route } from 'react-router-dom'
 import { fetchRecipes } from '../thunks/fetchRecipes'
 import { connect } from 'react-redux'
 import * as actions from '../actions'
+import { apiId, apiKey } from '../apiKey'
 
 
-class MainContainer extends Component {
+class Main extends Component {
 
 	componentDidMount() {
 		let url = `https://api.edamam.com/search?q=ma&app_id=${apiId}&app_key=${apiKey}&from=0&to=30`
@@ -37,4 +38,4 @@ export const mapDispatchToProps = (dispatch) => ({
   fetchRecipes: () => dispatch(fetchRecipes())
 })
 
-export default connect(mapStateToProps, mapDispatchToProps)(MainContainer)
+export default connect(mapStateToProps, mapDispatchToProps)(Main)
