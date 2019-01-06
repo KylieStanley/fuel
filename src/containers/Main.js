@@ -6,6 +6,7 @@ import { Route } from 'react-router-dom'
 import { fetchRecipes } from '../thunks/fetchRecipes'
 import { connect } from 'react-redux'
 import { apiId, apiKey } from '../apiKey'
+import Menu from '../Menu'
 
 
 export class Main extends Component {
@@ -18,9 +19,12 @@ export class Main extends Component {
 	render() {
 		return (
 			<div className="main-container">
+			<div className="header-menu">
 				<div className="main-text">
 					<h1 className="fuel">fuel</h1>
 					<h3>Recipes and Nutrition to support your training</h3>
+				</div>
+				<Menu />
 				</div>
 				<Search />
 				<CardContainer />

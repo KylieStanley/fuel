@@ -35,16 +35,21 @@ ShallowWrapper {
     "props": Object {
       "children": Array [
         <div
-          className="main-text"
+          className="header-menu"
         >
-          <h1
-            className="fuel"
+          <div
+            className="main-text"
           >
-            fuel
-          </h1>
-          <h3>
-            Recipes and Nutrition to support your training
-          </h3>
+            <h1
+              className="fuel"
+            >
+              fuel
+            </h1>
+            <h3>
+              Recipes and Nutrition to support your training
+            </h3>
+          </div>
+          <Menu />
         </div>,
         <Search />,
         <Connect(CardContainer) />,
@@ -59,16 +64,21 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": Array [
-            <h1
-              className="fuel"
+            <div
+              className="main-text"
             >
-              fuel
-            </h1>,
-            <h3>
-              Recipes and Nutrition to support your training
-            </h3>,
+              <h1
+                className="fuel"
+              >
+                fuel
+              </h1>
+              <h3>
+                Recipes and Nutrition to support your training
+              </h3>
+            </div>,
+            <Menu />,
           ],
-          "className": "main-text",
+          "className": "header-menu",
         },
         "ref": null,
         "rendered": Array [
@@ -77,23 +87,54 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": "fuel",
-              "className": "fuel",
+              "children": Array [
+                <h1
+                  className="fuel"
+                >
+                  fuel
+                </h1>,
+                <h3>
+                  Recipes and Nutrition to support your training
+                </h3>,
+              ],
+              "className": "main-text",
             },
             "ref": null,
-            "rendered": "fuel",
-            "type": "h1",
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "fuel",
+                  "className": "fuel",
+                },
+                "ref": null,
+                "rendered": "fuel",
+                "type": "h1",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Recipes and Nutrition to support your training",
+                },
+                "ref": null,
+                "rendered": "Recipes and Nutrition to support your training",
+                "type": "h3",
+              },
+            ],
+            "type": "div",
           },
           Object {
             "instance": null,
             "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": "Recipes and Nutrition to support your training",
-            },
+            "nodeType": "class",
+            "props": Object {},
             "ref": null,
-            "rendered": "Recipes and Nutrition to support your training",
-            "type": "h3",
+            "rendered": null,
+            "type": [Function],
           },
         ],
         "type": "div",
@@ -127,16 +168,21 @@ ShallowWrapper {
       "props": Object {
         "children": Array [
           <div
-            className="main-text"
+            className="header-menu"
           >
-            <h1
-              className="fuel"
+            <div
+              className="main-text"
             >
-              fuel
-            </h1>
-            <h3>
-              Recipes and Nutrition to support your training
-            </h3>
+              <h1
+                className="fuel"
+              >
+                fuel
+              </h1>
+              <h3>
+                Recipes and Nutrition to support your training
+              </h3>
+            </div>
+            <Menu />
           </div>,
           <Search />,
           <Connect(CardContainer) />,
@@ -151,16 +197,21 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": Array [
-              <h1
-                className="fuel"
+              <div
+                className="main-text"
               >
-                fuel
-              </h1>,
-              <h3>
-                Recipes and Nutrition to support your training
-              </h3>,
+                <h1
+                  className="fuel"
+                >
+                  fuel
+                </h1>
+                <h3>
+                  Recipes and Nutrition to support your training
+                </h3>
+              </div>,
+              <Menu />,
             ],
-            "className": "main-text",
+            "className": "header-menu",
           },
           "ref": null,
           "rendered": Array [
@@ -169,23 +220,54 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": "fuel",
-                "className": "fuel",
+                "children": Array [
+                  <h1
+                    className="fuel"
+                  >
+                    fuel
+                  </h1>,
+                  <h3>
+                    Recipes and Nutrition to support your training
+                  </h3>,
+                ],
+                "className": "main-text",
               },
               "ref": null,
-              "rendered": "fuel",
-              "type": "h1",
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "fuel",
+                    "className": "fuel",
+                  },
+                  "ref": null,
+                  "rendered": "fuel",
+                  "type": "h1",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Recipes and Nutrition to support your training",
+                  },
+                  "ref": null,
+                  "rendered": "Recipes and Nutrition to support your training",
+                  "type": "h3",
+                },
+              ],
+              "type": "div",
             },
             Object {
               "instance": null,
               "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": "Recipes and Nutrition to support your training",
-              },
+              "nodeType": "class",
+              "props": Object {},
               "ref": null,
-              "rendered": "Recipes and Nutrition to support your training",
-              "type": "h3",
+              "rendered": null,
+              "type": [Function],
             },
           ],
           "type": "div",
