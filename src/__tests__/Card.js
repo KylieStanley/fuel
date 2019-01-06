@@ -3,6 +3,7 @@ import { shallow } from 'enzyme'
 import { Card, mapStateToProps, mapDispatchToProps } from '../containers/Card'
 import { addFavorite, removeFavorite } from '../actions'
 
+
 describe('Card', () => {
   let wrapper
   let mockRecipe

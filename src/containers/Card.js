@@ -3,8 +3,8 @@ import { connect } from 'react-redux'
 import { addFavorite, removeFavorite } from '../actions'
 import '../styles/main.scss';
 
-export class Card extends Component {
 
+export class Card extends Component {
 
 	toggleFavorite = (favorite) => {
 		let { favorites, recipe, removeFavorite, addFavorite } = this.props
