@@ -21,8 +21,8 @@ export class Menu extends Component {
 				<div className={`menu ${toggled}`} onClick={ this.toggleMenu }>
 					<div className="hamburger"></div>
 				<NavLink to='/main' className="menu-item home">Home</NavLink>
-				<NavLink to='/home' className="menu-item faves">Favorites</NavLink>
-				<NavLink to='/home' className="menu-item list">Shopping List</NavLink>
+				<NavLink to='/favorites' className="menu-item faves">Favorites</NavLink>
+				<NavLink to='/shopping' className="menu-item list">Shopping List</NavLink>
 				</div>
 			)
 	}

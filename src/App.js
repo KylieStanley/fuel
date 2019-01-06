@@ -15,7 +15,8 @@ class App extends Component {
       <div className="splash-green"></div>
         <Route exact path='/' component={ Splash } />
         <Route exact path='/main' component={ Main } />
-        <Route exact path='/home' component={ Home } />
+        <Route exact path="/favorites" render={() => <Home itemType="favorites" />} />
+        <Route exact path="/shopping" render={() => <Home itemType="shopping" />} />
       </div>
     );
   }

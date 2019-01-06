@@ -5,13 +5,16 @@ import { connect } from 'react-redux'
 
 
 export const CardContainer = (props) => {
+	let recipes = props.recipes
 
-
+	if (props.itemType === 'favorites') {
+		recipes = props.favorites
+	}
 
 	return (
 		<div className="card-container">
 			{
-				props.recipes.map(recipe => {
+				recipes.map(recipe => {
 					return <Card recipe={recipe}/>
 				})
 			}
