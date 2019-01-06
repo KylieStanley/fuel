@@ -1,40 +1,44 @@
-import React from 'react'
+import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { addFavorite, removeFavorite } from '../actions'
 import '../styles/main.scss';
 
-export const Card = (props) => {
+export class Card extends Component {
 
-	let favorite = props.favorites.find(favorite => {
-      return favorite.url === props.recipe.url
-    })
 
-	const toggleFavorite = () => {
-		if(favorite) {
-			props.removeFavorite(props.recipe)
+	toggleFavorite = (favorite) => {
+		let { favorites, recipe, removeFavorite, addFavorite } = this.props
+		
+		let match = favorites.find(favorite => favorite.url === recipe.url)
+
+		if(match) {
+			removeFavorite(recipe)
 		} else {
-			props.addFavorite(props.recipe)
+			addFavorite(recipe)
 		}
 	}
 
-  let favoriteClass = favorite ? <i class="favorite fas fa-heart"></i> : <i className="far fa-heart"></i>
-
-	return (
-		<div className="card">
-			<div className="image" style={{ backgroundImage: `url(${ props.recipe.image })` }}>
-			</div>
-			<div className="recipe-info">
-				<h3>{ props.recipe.name }</h3>
-				<div className="card-bottom">
-					<button className="fave-btn" onClick={ toggleFavorite }>
-						{ favoriteClass }
-					</button>
-					<p>{ props.recipe.dietLabel }</p>
-				</div>
-			</div>
-		</div>
+  render() {
+  	let { favorites, recipe } = this.props
+  	let favorite = favorites.find(favorite => favorite.url === recipe.url)
+  	let favoriteClass = favorite ? <i class="favorite fas fa-heart"></i> : <i className="far fa-heart"></i>
 		
-	)
+		return (
+			<div className="card">
+				<div className="image" style={{ backgroundImage: `url(${ recipe.image })` }}>
+				</div>
+				<div className="recipe-info">
+					<h3>{ recipe.name }</h3>
+					<div className="card-bottom">
+						<button className="fave-btn" onClick={ this.toggleFavorite }>
+							{ favoriteClass }
+						</button>
+						<p>{ recipe.dietLabel }</p>
+					</div>
+				</div>
+			</div>	
+		)
+  }
 }
 
 export const mapStateToProps = (state) => ({

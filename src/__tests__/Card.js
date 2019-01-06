@@ -7,8 +7,10 @@ describe('Card', () => {
   let wrapper
   let mockRecipe
   let mockFavorites
+  let mockFunc
 
   beforeEach(() => {
+    mockFunc = jest.fn()
     mockRecipe = {name: 'chicken pasta', url: 'chicken.jpg'}
   	mockFavorites = [{name: 'chicken pasta', url: 'chicken.jpg'}, 
       {name: 'salmon steak', url: 'fish.jpg'}]
@@ -18,11 +20,18 @@ describe('Card', () => {
         favorites={ mockFavorites }
         addFavorite={ jest.fn() }
         removeFavorite={ jest.fn() }
+        onClick={ mockFunc }
     	/>)
   })
 
   it('should match the snapshot', () => {
     expect(wrapper).toMatchSnapshot()
+  })
+
+  it('should run toggle favorite on click of the heart', () => {
+    wrapper.find('button').simulate('click');
+    wrapper.instance().forceUpdate()
+    expect(mockFunc).toHaveBeenCalled();
   })
 
   describe('mapStateToProps', () => {

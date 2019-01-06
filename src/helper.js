@@ -10,3 +10,4 @@ const cleanRecipes = (recipes) => {
 }
 
 export default cleanRecipes
+
