@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './styles/main.scss';
-import { Route, NavLink } from 'react-router-dom'
+import { Route } from 'react-router-dom'
 import Splash from './Splash'
 import Home from './Home'
 import Main from './containers/Main'

@@ -1,0 +1,231 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Menu should match the snapshot 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Menu />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <div
+          className="hamburger"
+        />,
+        <NavLink
+          activeClassName="active"
+          aria-current="page"
+          className="menu-item home"
+          to="/main"
+        >
+          Home
+        </NavLink>,
+        <NavLink
+          activeClassName="active"
+          aria-current="page"
+          className="menu-item faves"
+          to="/home"
+        >
+          Favorites
+        </NavLink>,
+        <NavLink
+          activeClassName="active"
+          aria-current="page"
+          className="menu-item list"
+          to="/home"
+        >
+          Shopping List
+        </NavLink>,
+      ],
+      "className": "menu ",
+      "onClick": [Function],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "className": "hamburger",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "activeClassName": "active",
+          "aria-current": "page",
+          "children": "Home",
+          "className": "menu-item home",
+          "to": "/main",
+        },
+        "ref": null,
+        "rendered": "Home",
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "activeClassName": "active",
+          "aria-current": "page",
+          "children": "Favorites",
+          "className": "menu-item faves",
+          "to": "/home",
+        },
+        "ref": null,
+        "rendered": "Favorites",
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "activeClassName": "active",
+          "aria-current": "page",
+          "children": "Shopping List",
+          "className": "menu-item list",
+          "to": "/home",
+        },
+        "ref": null,
+        "rendered": "Shopping List",
+        "type": [Function],
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <div
+            className="hamburger"
+          />,
+          <NavLink
+            activeClassName="active"
+            aria-current="page"
+            className="menu-item home"
+            to="/main"
+          >
+            Home
+          </NavLink>,
+          <NavLink
+            activeClassName="active"
+            aria-current="page"
+            className="menu-item faves"
+            to="/home"
+          >
+            Favorites
+          </NavLink>,
+          <NavLink
+            activeClassName="active"
+            aria-current="page"
+            className="menu-item list"
+            to="/home"
+          >
+            Shopping List
+          </NavLink>,
+        ],
+        "className": "menu ",
+        "onClick": [Function],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "className": "hamburger",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "activeClassName": "active",
+            "aria-current": "page",
+            "children": "Home",
+            "className": "menu-item home",
+            "to": "/main",
+          },
+          "ref": null,
+          "rendered": "Home",
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "activeClassName": "active",
+            "aria-current": "page",
+            "children": "Favorites",
+            "className": "menu-item faves",
+            "to": "/home",
+          },
+          "ref": null,
+          "rendered": "Favorites",
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "activeClassName": "active",
+            "aria-current": "page",
+            "children": "Shopping List",
+            "className": "menu-item list",
+            "to": "/home",
+          },
+          "ref": null,
+          "rendered": "Shopping List",
+          "type": [Function],
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;

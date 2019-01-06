@@ -61,7 +61,7 @@ ShallowWrapper {
               onClick={[Function]}
             >
               <i
-                class="favorite fas fa-heart"
+                className="favorite fas fa-heart"
               />
             </button>
             <p />
@@ -103,7 +103,7 @@ ShallowWrapper {
                 onClick={[Function]}
               >
                 <i
-                  class="favorite fas fa-heart"
+                  className="favorite fas fa-heart"
                 />
               </button>
               <p />
@@ -135,7 +135,7 @@ ShallowWrapper {
                   onClick={[Function]}
                 >
                   <i
-                    class="favorite fas fa-heart"
+                    className="favorite fas fa-heart"
                   />
                 </button>,
                 <p />,
@@ -150,7 +150,7 @@ ShallowWrapper {
                 "nodeType": "host",
                 "props": Object {
                   "children": <i
-                    class="favorite fas fa-heart"
+                    className="favorite fas fa-heart"
                   />,
                   "className": "fave-btn",
                   "onClick": [Function],
@@ -161,7 +161,7 @@ ShallowWrapper {
                   "key": undefined,
                   "nodeType": "host",
                   "props": Object {
-                    "class": "favorite fas fa-heart",
+                    "className": "favorite fas fa-heart",
                   },
                   "ref": null,
                   "rendered": null,
@@ -218,7 +218,7 @@ ShallowWrapper {
                 onClick={[Function]}
               >
                 <i
-                  class="favorite fas fa-heart"
+                  className="favorite fas fa-heart"
                 />
               </button>
               <p />
@@ -260,7 +260,7 @@ ShallowWrapper {
                   onClick={[Function]}
                 >
                   <i
-                    class="favorite fas fa-heart"
+                    className="favorite fas fa-heart"
                   />
                 </button>
                 <p />
@@ -292,7 +292,7 @@ ShallowWrapper {
                     onClick={[Function]}
                   >
                     <i
-                      class="favorite fas fa-heart"
+                      className="favorite fas fa-heart"
                     />
                   </button>,
                   <p />,
@@ -307,7 +307,7 @@ ShallowWrapper {
                   "nodeType": "host",
                   "props": Object {
                     "children": <i
-                      class="favorite fas fa-heart"
+                      className="favorite fas fa-heart"
                     />,
                     "className": "fave-btn",
                     "onClick": [Function],
@@ -318,7 +318,7 @@ ShallowWrapper {
                     "key": undefined,
                     "nodeType": "host",
                     "props": Object {
-                      "class": "favorite fas fa-heart",
+                      "className": "favorite fas fa-heart",
                     },
                     "ref": null,
                     "rendered": null,

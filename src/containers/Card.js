@@ -21,7 +21,7 @@ export class Card extends Component {
   render() {
   	let { favorites, recipe } = this.props
   	let favorite = favorites.find(favorite => favorite.url === recipe.url)
-  	let favoriteClass = favorite ? <i class="favorite fas fa-heart"></i> : <i className="far fa-heart"></i>
+  	let favoriteClass = favorite ? <i className="favorite fas fa-heart"></i> : <i className="far fa-heart"></i>
 		
 		return (
 			<div className="card">
