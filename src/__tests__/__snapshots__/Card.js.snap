@@ -9,7 +9,7 @@ ShallowWrapper {
       Array [
         Object {
           "name": "chicken pasta",
-          "url": "chicken.jpg",
+          "url": "chicken.com",
         },
         Object {
           "name": "salmon steak",
@@ -20,7 +20,7 @@ ShallowWrapper {
     recipe={
       Object {
         "name": "chicken pasta",
-        "url": "chicken.jpg",
+        "url": "chicken.com",
       }
     }
     removeFavorite={[MockFunction]}

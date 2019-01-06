@@ -7,12 +7,10 @@ describe('Card', () => {
   let wrapper
   let mockRecipe
   let mockFavorites
-  let mockFunc
 
   beforeEach(() => {
-    mockFunc = jest.fn()
-    mockRecipe = {name: 'chicken pasta', url: 'chicken.jpg'}
-  	mockFavorites = [{name: 'chicken pasta', url: 'chicken.jpg'}, 
+    mockRecipe = {name: 'chicken pasta', url: 'chicken.com'}
+  	mockFavorites = [{name: 'chicken pasta', url: 'chicken.com'}, 
       {name: 'salmon steak', url: 'fish.jpg'}]
     wrapper = shallow(
     	<Card 
@@ -20,7 +18,6 @@ describe('Card', () => {
         favorites={ mockFavorites }
         addFavorite={ jest.fn() }
         removeFavorite={ jest.fn() }
-        onClick={ mockFunc }
     	/>)
   })
 
@@ -29,9 +26,32 @@ describe('Card', () => {
   })
 
   it('should run toggle favorite on click of the heart', () => {
-    wrapper.find('button').simulate('click');
+    const spy = jest.spyOn(wrapper.instance(), 'toggleFavorite')
     wrapper.instance().forceUpdate()
-    expect(mockFunc).toHaveBeenCalled();
+    wrapper.find('button').simulate('click');
+
+    expect(spy).toHaveBeenCalled();
+  })
+
+  it('should call removeFavorite if there is a match', () => {
+    wrapper.instance().toggleFavorite()
+
+    expect(wrapper.instance().props.removeFavorite).toHaveBeenCalledWith(mockRecipe);
+  })
+
+   it('should call addFavorite if there is no match', () => {
+    mockRecipe = {name: 'chicken pasta', url: 'salmon.com'}
+    wrapper = shallow(
+      <Card 
+        recipe={ mockRecipe }
+        favorites={ mockFavorites }
+        addFavorite={ jest.fn() }
+        removeFavorite={ jest.fn() }
+      />)
+
+    wrapper.instance().toggleFavorite()
+
+    expect(wrapper.instance().props.addFavorite).toHaveBeenCalledWith(mockRecipe);
   })
 
   describe('mapStateToProps', () => {
