@@ -35,9 +35,14 @@ ShallowWrapper {
           path="/main"
         />,
         <Route
-          component={[Function]}
           exact={true}
-          path="/home"
+          path="/favorites"
+          render={[Function]}
+        />,
+        <Route
+          exact={true}
+          path="/shopping"
+          render={[Function]}
         />,
       ],
       "className": "splash",
@@ -97,9 +102,22 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "class",
         "props": Object {
-          "component": [Function],
           "exact": true,
-          "path": "/home",
+          "path": "/favorites",
+          "render": [Function],
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "exact": true,
+          "path": "/shopping",
+          "render": [Function],
         },
         "ref": null,
         "rendered": null,
@@ -132,9 +150,14 @@ ShallowWrapper {
             path="/main"
           />,
           <Route
-            component={[Function]}
             exact={true}
-            path="/home"
+            path="/favorites"
+            render={[Function]}
+          />,
+          <Route
+            exact={true}
+            path="/shopping"
+            render={[Function]}
           />,
         ],
         "className": "splash",
@@ -194,9 +217,22 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "class",
           "props": Object {
-            "component": [Function],
             "exact": true,
-            "path": "/home",
+            "path": "/favorites",
+            "render": [Function],
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "exact": true,
+            "path": "/shopping",
+            "render": [Function],
           },
           "ref": null,
           "rendered": null,

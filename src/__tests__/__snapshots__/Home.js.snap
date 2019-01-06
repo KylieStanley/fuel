@@ -18,13 +18,12 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
+        <Menu />,
         <h1
           className="header"
         >
           fuel
-          <span>
-            favorites
-          </span>
+          <span />
         </h1>,
         <Connect(CardContainer) />,
       ],
@@ -35,13 +34,20 @@ ShallowWrapper {
       Object {
         "instance": null,
         "key": undefined,
+        "nodeType": "class",
+        "props": Object {},
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
         "nodeType": "host",
         "props": Object {
           "children": Array [
             "fuel",
-            <span>
-              favorites
-            </span>,
+            <span />,
           ],
           "className": "header",
         },
@@ -53,10 +59,10 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": "favorites",
+              "children": undefined,
             },
             "ref": null,
-            "rendered": "favorites",
+            "rendered": null,
             "type": "span",
           },
         ],
@@ -66,7 +72,9 @@ ShallowWrapper {
         "instance": null,
         "key": undefined,
         "nodeType": "class",
-        "props": Object {},
+        "props": Object {
+          "itemType": undefined,
+        },
         "ref": null,
         "rendered": null,
         "type": [Function],
@@ -81,13 +89,12 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
+          <Menu />,
           <h1
             className="header"
           >
             fuel
-            <span>
-              favorites
-            </span>
+            <span />
           </h1>,
           <Connect(CardContainer) />,
         ],
@@ -98,13 +105,20 @@ ShallowWrapper {
         Object {
           "instance": null,
           "key": undefined,
+          "nodeType": "class",
+          "props": Object {},
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
           "nodeType": "host",
           "props": Object {
             "children": Array [
               "fuel",
-              <span>
-                favorites
-              </span>,
+              <span />,
             ],
             "className": "header",
           },
@@ -116,10 +130,10 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": "favorites",
+                "children": undefined,
               },
               "ref": null,
-              "rendered": "favorites",
+              "rendered": null,
               "type": "span",
             },
           ],
@@ -129,7 +143,9 @@ ShallowWrapper {
           "instance": null,
           "key": undefined,
           "nodeType": "class",
-          "props": Object {},
+          "props": Object {
+            "itemType": undefined,
+          },
           "ref": null,
           "rendered": null,
           "type": [Function],

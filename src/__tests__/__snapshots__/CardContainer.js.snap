@@ -4,10 +4,21 @@ exports[`CardContainer should match the snapshot 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <CardContainer
+    favorites={
+      Array [
+        Object {
+          "name": "chicken",
+        },
+      ]
+    }
+    itemType="recipes"
     recipes={
       Array [
         Object {
           "name": "chicken",
+        },
+        Object {
+          "name": "salmon",
         },
       ]
     }
@@ -33,6 +44,13 @@ ShallowWrapper {
             }
           }
         />,
+        <Connect(Card)
+          recipe={
+            Object {
+              "name": "salmon",
+            }
+          }
+        />,
       ],
       "className": "card-container",
     },
@@ -45,6 +63,19 @@ ShallowWrapper {
         "props": Object {
           "recipe": Object {
             "name": "chicken",
+          },
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "recipe": Object {
+            "name": "salmon",
           },
         },
         "ref": null,
@@ -68,6 +99,13 @@ ShallowWrapper {
               }
             }
           />,
+          <Connect(Card)
+            recipe={
+              Object {
+                "name": "salmon",
+              }
+            }
+          />,
         ],
         "className": "card-container",
       },
@@ -80,6 +118,19 @@ ShallowWrapper {
           "props": Object {
             "recipe": Object {
               "name": "chicken",
+            },
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "recipe": Object {
+              "name": "salmon",
             },
           },
           "ref": null,

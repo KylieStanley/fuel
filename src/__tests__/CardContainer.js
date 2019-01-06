@@ -1,17 +1,38 @@
 import React from 'react'
 import { CardContainer, mapStateToProps } from '../containers/CardContainer'
+import ReactDOM from 'react-dom';
+import Card  from '../containers/Card'
+import { connect } from 'react-redux'
 import { shallow } from 'enzyme'
 
 describe('CardContainer', () => {
 	let wrapper
-	let mockRecipes = [{ name: 'chicken' }]
+	let mockRecipes = [{ name: 'chicken' }, { name: 'salmon' }]
+	let mockFavorites = [{ name: 'chicken' }]
 
 	beforeEach(() => {
-		wrapper = shallow(<CardContainer recipes={ mockRecipes } />)
+		wrapper = shallow(<CardContainer 
+			recipes={ mockRecipes } 
+			favorites={ mockFavorites } 
+			itemType={ 'recipes' }
+		/>)
 	})
 
 	it('should match the snapshot', () => {
 		expect(wrapper).toMatchSnapshot()
+	})
+
+	it('should render recipes if on the main page', () => {
+		expect(wrapper.find(Card).length).toEqual(2)
+	})
+
+	it('should render favorites if on the favorites page', () => {
+		wrapper = shallow(<CardContainer 
+			recipes={ mockRecipes } 
+			favorites={ mockFavorites } 
+			itemType={ 'favorites' }
+		/>)
+		expect(wrapper.find(Card).length).toEqual(1)
 	})
 
 	describe('mapStateToProps', () => {

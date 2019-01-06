@@ -33,7 +33,7 @@ ShallowWrapper {
           activeClassName="active"
           aria-current="page"
           className="menu-item faves"
-          to="/home"
+          to="/favorites"
         >
           Favorites
         </NavLink>,
@@ -41,7 +41,7 @@ ShallowWrapper {
           activeClassName="active"
           aria-current="page"
           className="menu-item list"
-          to="/home"
+          to="/shopping"
         >
           Shopping List
         </NavLink>,
@@ -86,7 +86,7 @@ ShallowWrapper {
           "aria-current": "page",
           "children": "Favorites",
           "className": "menu-item faves",
-          "to": "/home",
+          "to": "/favorites",
         },
         "ref": null,
         "rendered": "Favorites",
@@ -101,7 +101,7 @@ ShallowWrapper {
           "aria-current": "page",
           "children": "Shopping List",
           "className": "menu-item list",
-          "to": "/home",
+          "to": "/shopping",
         },
         "ref": null,
         "rendered": "Shopping List",
@@ -132,7 +132,7 @@ ShallowWrapper {
             activeClassName="active"
             aria-current="page"
             className="menu-item faves"
-            to="/home"
+            to="/favorites"
           >
             Favorites
           </NavLink>,
@@ -140,7 +140,7 @@ ShallowWrapper {
             activeClassName="active"
             aria-current="page"
             className="menu-item list"
-            to="/home"
+            to="/shopping"
           >
             Shopping List
           </NavLink>,
@@ -185,7 +185,7 @@ ShallowWrapper {
             "aria-current": "page",
             "children": "Favorites",
             "className": "menu-item faves",
-            "to": "/home",
+            "to": "/favorites",
           },
           "ref": null,
           "rendered": "Favorites",
@@ -200,7 +200,7 @@ ShallowWrapper {
             "aria-current": "page",
             "children": "Shopping List",
             "className": "menu-item list",
-            "to": "/home",
+            "to": "/shopping",
           },
           "ref": null,
           "rendered": "Shopping List",

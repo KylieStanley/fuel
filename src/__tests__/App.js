@@ -15,7 +15,7 @@ describe('CardContainer', () => {
 	})
 
 	it('should render three possible routes', () => {
-    expect(wrapper.find(Route).length).toEqual(3)
+    expect(wrapper.find(Route).length).toEqual(4)
   })
 
   it('routes / to the Splash component', () => {
@@ -24,9 +24,5 @@ describe('CardContainer', () => {
 
   it('routes / to the Main component', () => {
     expect(wrapper.find('Route[exact=true][path="/main"]').first().prop('render')).toEqual(component)
-  })
-
-  it('routes / to the Home component', () => {
-    expect(wrapper.find('Route[exact=true][path="/home"]').first().prop('render')).toEqual(component)
   })
 })
