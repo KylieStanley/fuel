@@ -15,22 +15,16 @@ export class Menu extends Component {
 	}
 
 	render() {
-		if (!this.state.expanded) {
+		let toggled = this.state.expanded ? "toggled" : ""
+
 			return (
-				<div className="menu" onClick={ this.toggleMenu }>
-					<div className="hamburger"></div>
-				</div>
-			)
-		} else {
-			return (
-				<div className="menu toggled" onClick={ this.toggleMenu }>
+				<div className={`menu ${toggled}`} onClick={ this.toggleMenu }>
 					<div className="hamburger"></div>
 				<NavLink to='/main' className="menu-item home">Home</NavLink>
 				<NavLink to='/home' className="menu-item faves">Favorites</NavLink>
 				<NavLink to='/home' className="menu-item list">Shopping List</NavLink>
 				</div>
 			)
-		}
 	}
 }
 

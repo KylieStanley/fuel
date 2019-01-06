@@ -8,12 +8,15 @@
 }
 
 .menu-item {
-	font-size: 2rem;
+  font-size: 2rem;
   color: #232323;
-	font-family: 'Ropa Sans', sans-serif;
-	position: absolute;
+  font-family: 'Ropa Sans', sans-serif;
+  position: absolute;
   top: 37%;
   text-decoration: none;
+  transition: .3s linear;
+  left: 100px;
+  opacity: 0;
 }
 
 .hamburger {
@@ -64,13 +67,27 @@
 }
 
 .home {
-  left: -370px;
+  transition-delay: .2s;
+
+  .toggled & {
+    opacity: 1;
+    transform: translate(-495px);
+  }
 }
 
 .faves {
-  left: -280px;
+  transition-delay: .1s;
+  .toggled & {
+    opacity: 1;
+    transform: translate(-395px);
+  }
 }
 .list {
-	left: -150px;
+  width: 172px;
+  
+  .toggled & {
+    opacity: 1;
+    transform: translate(-260px);
+  }
 }
 
