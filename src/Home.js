@@ -3,7 +3,7 @@ import Search from './Search'
 import Menu	 from './Menu'
 import CardContainer from './containers/CardContainer'
 
-const Home = (props) => {
+export const Home = (props) => {
 
 	return (
 		<div className="main-container">
