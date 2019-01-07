@@ -1,12 +1,8 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
-import { addFavorite, removeFavorite } from '../actions'
+import { addFavorite, removeFavorite, selectCard } from '../actions'
 import '../styles/main.scss';
 import { Link, withRouter } from 'react-router-dom'
-import 'react-router-modal/css/react-router-modal.css'
-import Main from './Main'
-import { Modal } from '../Modal'
-import { ModalContainer, ModalRoute } from 'react-router-modal';
 
 
 
@@ -24,11 +20,6 @@ export class Card extends Component {
 		}
 	}
 
-	selectCard = () => {
-		console.log('selected')
-	}
-
-
 	render() {
   	let { favorites, recipe } = this.props
   	let favorite = favorites.find(favorite => favorite.url === recipe.url)
@@ -38,7 +29,7 @@ export class Card extends Component {
 			<div className="card">
 				<div className="image" style={{ backgroundImage: `url(${ recipe.image })` }} />
 				<div className="recipe-info">
-					<Link to={`${this.props.match.url}/modal`} onClick={this.selectCard}>
+					<Link to={`${this.props.match.url}/modal`} onClick={this.props.selectCard.bind(null, this.props.recipe)}>
 						<h3>{ recipe.name }</h3>
 					</Link>	
 					<div className="card-bottom">
@@ -59,7 +50,8 @@ export const mapStateToProps = (state) => ({
 
 export const mapDispatchToProps = (dispatch) => ({
   addFavorite: (recipe) => dispatch(addFavorite(recipe)),
-  removeFavorite: (recipe) => dispatch(removeFavorite(recipe))
+  removeFavorite: (recipe) => dispatch(removeFavorite(recipe)),
+  selectCard: (recipe) => dispatch(selectCard(recipe))
 })
 
 export default withRouter(connect(mapStateToProps, mapDispatchToProps)(Card))

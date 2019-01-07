@@ -1,7 +1,7 @@
 import React from 'react'
 import { Home } from '../Home'
 import  Main  from '../containers/Main'
-import App from '../App'
+import App from '../containers/App'
 import Splash from '../Splash'
 import { shallow, mount } from 'enzyme'
 import { Route, component, render } from 'react-router-dom'

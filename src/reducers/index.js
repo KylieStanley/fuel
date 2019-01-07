@@ -7,7 +7,7 @@ const rootReducer = combineReducers({
   favorites: favoriteReducer,
   recipes: recipeReducer,
   error: hasErrored,
-  isLoading: isLoading
+  isLoading: isLoading,
   selectedCard: cardReducer
 })
 
