@@ -1,4 +1,4 @@
-const cleanRecipes = (recipes) => {
+export const cleanRecipes = (recipes) => {
 	return recipes.map(currentItem => ({
 		name: currentItem.recipe.label,
 		yield: currentItem.recipe.yield,
@@ -9,5 +9,6 @@ const cleanRecipes = (recipes) => {
 	}))
 }
 
-export default cleanRecipes
-
+export const cleanSearchString = (string) => {
+	return string.replace(' ', '%20')
+}

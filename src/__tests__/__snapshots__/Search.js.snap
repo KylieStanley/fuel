@@ -32,7 +32,7 @@ ShallowWrapper {
           />
         </button>,
       ],
-      "onSubmit": undefined,
+      "onSubmit": [Function],
     },
     "ref": null,
     "rendered": Array [
@@ -98,7 +98,7 @@ ShallowWrapper {
             />
           </button>,
         ],
-        "onSubmit": undefined,
+        "onSubmit": [Function],
       },
       "ref": null,
       "rendered": Array [

@@ -1,8 +1,6 @@
 import React, { Component } from 'react'
-import Search from '../Search'
+import Search from './Search'
 import CardContainer from '../containers/CardContainer'
-import Home from '../Home'
-import { Route } from 'react-router-dom'
 import { fetchRecipes } from '../thunks/fetchRecipes'
 import { connect } from 'react-redux'
 import { apiId, apiKey } from '../apiKey'
@@ -12,8 +10,10 @@ import Menu from '../Menu'
 export class Main extends Component {
 
 	componentDidMount() {
-		let url = `https://api.edamam.com/search?q=ma&app_id=${apiId}&app_key=${apiKey}&from=0&to=30`
-		this.props.fetchRecipes(url)
+		if(this.props.recipes.length === 0) {
+			let url = `https://api.edamam.com/search?q=ma&app_id=${apiId}&app_key=${apiKey}&from=0&to=30`
+			this.props.fetchRecipes(url)	
+		}
 	}
 
 	render() {

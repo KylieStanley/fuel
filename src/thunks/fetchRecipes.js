@@ -1,5 +1,5 @@
 import { isLoading, hasErrored, fetchRecipeSuccess } from '../actions'
-import cleanRecipes from '../helper.js'
+import { cleanRecipes } from '../helper.js'
 
 export const fetchRecipes = (url) => {
    return async (dispatch) =>  {

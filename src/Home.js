@@ -1,5 +1,4 @@
 import React from 'react'
-import Search from './Search'
 import Menu	 from './Menu'
 import CardContainer from './containers/CardContainer'
 

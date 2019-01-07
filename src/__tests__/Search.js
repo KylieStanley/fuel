@@ -1,6 +1,6 @@
 import React from 'react'
 import { shallow } from 'enzyme'
-import Search from '../Search'
+import { Search } from '../containers/Search'
 
 describe('Search', () => {
   let wrapper
@@ -15,7 +15,7 @@ describe('Search', () => {
 
   it('simulates text change in input box',() => {
     const mockData = { target: {value: 'Chicken'}}
-    const spy = jest.spyOn(wrapper.instance(), 'handleSearch')
+    const spy = jest.spyOn(wrapper.instance(), 'handleChange')
     wrapper.instance().forceUpdate();
     const input = wrapper.find('input');
     input.simulate('change', mockData);

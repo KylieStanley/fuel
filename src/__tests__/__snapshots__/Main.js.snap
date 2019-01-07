@@ -51,7 +51,7 @@ ShallowWrapper {
           </div>
           <Menu />
         </div>,
-        <Search />,
+        <Connect(Search) />,
         <Connect(CardContainer) />,
       ],
       "className": "main-container",
@@ -184,7 +184,7 @@ ShallowWrapper {
             </div>
             <Menu />
           </div>,
-          <Search />,
+          <Connect(Search) />,
           <Connect(CardContainer) />,
         ],
         "className": "main-container",
