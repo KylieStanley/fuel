@@ -3,7 +3,19 @@
 exports[`App should match the snapshot 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <App />,
+  Symbol(enzyme.__unrendered__): <App
+    history={
+      Object {
+        "goBack": [MockFunction],
+      }
+    }
+    selectedCard={
+      Object {
+        "name": "chicken",
+        "source": "Good Eats",
+      }
+    }
+  />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
     "getNode": [Function],
@@ -31,18 +43,42 @@ ShallowWrapper {
         />,
         <Route
           component={[Function]}
-          exact={true}
           path="/main"
         />,
         <Route
-          exact={true}
           path="/favorites"
           render={[Function]}
         />,
         <Route
-          exact={true}
           path="/shopping"
           render={[Function]}
+        />,
+        <withRouter(ModalRoute)
+          component={[Function]}
+          parentPath="function() {
+        return fn.apply(this, arguments);
+      }"
+          path="*/modal"
+          props={
+            Object {
+              "recipe": Object {
+                "name": "chicken",
+                "source": "Good Eats",
+              },
+            }
+          }
+        />,
+        <ModalContainer
+          autoRestoreScrollPosition={true}
+          backdropClassName="react-router-modal__backdrop"
+          backdropInClassName="react-router-modal__backdrop--in"
+          backdropOutClassName="react-router-modal__backdrop--out"
+          bodyModalOpenClassName="react-router-modal__modal-open"
+          containerClassName="react-router-modal__container"
+          modalClassName="react-router-modal__modal"
+          modalInClassName="react-router-modal__modal--in"
+          modalOutClassName="react-router-modal__modal--out"
+          wrapperClassName="react-router-modal__wrapper"
         />,
       ],
       "className": "splash",
@@ -90,7 +126,6 @@ ShallowWrapper {
         "nodeType": "class",
         "props": Object {
           "component": [Function],
-          "exact": true,
           "path": "/main",
         },
         "ref": null,
@@ -102,7 +137,6 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "class",
         "props": Object {
-          "exact": true,
           "path": "/favorites",
           "render": [Function],
         },
@@ -115,9 +149,49 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "class",
         "props": Object {
-          "exact": true,
           "path": "/shopping",
           "render": [Function],
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "component": [Function],
+          "parentPath": "function() {
+        return fn.apply(this, arguments);
+      }",
+          "path": "*/modal",
+          "props": Object {
+            "recipe": Object {
+              "name": "chicken",
+              "source": "Good Eats",
+            },
+          },
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "autoRestoreScrollPosition": true,
+          "backdropClassName": "react-router-modal__backdrop",
+          "backdropInClassName": "react-router-modal__backdrop--in",
+          "backdropOutClassName": "react-router-modal__backdrop--out",
+          "bodyModalOpenClassName": "react-router-modal__modal-open",
+          "containerClassName": "react-router-modal__container",
+          "modalClassName": "react-router-modal__modal",
+          "modalInClassName": "react-router-modal__modal--in",
+          "modalOutClassName": "react-router-modal__modal--out",
+          "wrapperClassName": "react-router-modal__wrapper",
         },
         "ref": null,
         "rendered": null,
@@ -146,18 +220,42 @@ ShallowWrapper {
           />,
           <Route
             component={[Function]}
-            exact={true}
             path="/main"
           />,
           <Route
-            exact={true}
             path="/favorites"
             render={[Function]}
           />,
           <Route
-            exact={true}
             path="/shopping"
             render={[Function]}
+          />,
+          <withRouter(ModalRoute)
+            component={[Function]}
+            parentPath="function() {
+        return fn.apply(this, arguments);
+      }"
+            path="*/modal"
+            props={
+              Object {
+                "recipe": Object {
+                  "name": "chicken",
+                  "source": "Good Eats",
+                },
+              }
+            }
+          />,
+          <ModalContainer
+            autoRestoreScrollPosition={true}
+            backdropClassName="react-router-modal__backdrop"
+            backdropInClassName="react-router-modal__backdrop--in"
+            backdropOutClassName="react-router-modal__backdrop--out"
+            bodyModalOpenClassName="react-router-modal__modal-open"
+            containerClassName="react-router-modal__container"
+            modalClassName="react-router-modal__modal"
+            modalInClassName="react-router-modal__modal--in"
+            modalOutClassName="react-router-modal__modal--out"
+            wrapperClassName="react-router-modal__wrapper"
           />,
         ],
         "className": "splash",
@@ -205,7 +303,6 @@ ShallowWrapper {
           "nodeType": "class",
           "props": Object {
             "component": [Function],
-            "exact": true,
             "path": "/main",
           },
           "ref": null,
@@ -217,7 +314,6 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "class",
           "props": Object {
-            "exact": true,
             "path": "/favorites",
             "render": [Function],
           },
@@ -230,9 +326,49 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "class",
           "props": Object {
-            "exact": true,
             "path": "/shopping",
             "render": [Function],
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "component": [Function],
+            "parentPath": "function() {
+        return fn.apply(this, arguments);
+      }",
+            "path": "*/modal",
+            "props": Object {
+              "recipe": Object {
+                "name": "chicken",
+                "source": "Good Eats",
+              },
+            },
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "autoRestoreScrollPosition": true,
+            "backdropClassName": "react-router-modal__backdrop",
+            "backdropInClassName": "react-router-modal__backdrop--in",
+            "backdropOutClassName": "react-router-modal__backdrop--out",
+            "bodyModalOpenClassName": "react-router-modal__modal-open",
+            "containerClassName": "react-router-modal__container",
+            "modalClassName": "react-router-modal__modal",
+            "modalInClassName": "react-router-modal__modal--in",
+            "modalOutClassName": "react-router-modal__modal--out",
+            "wrapperClassName": "react-router-modal__wrapper",
           },
           "ref": null,
           "rendered": null,

@@ -19,6 +19,8 @@ describe('Card', () => {
         favorites={ mockFavorites }
         addFavorite={ jest.fn() }
         removeFavorite={ jest.fn() }
+        selectCard={ jest.fn() }
+        match={ {url: '/'} }
     	/>)
   })
 
@@ -48,6 +50,8 @@ describe('Card', () => {
         favorites={ mockFavorites }
         addFavorite={ jest.fn() }
         removeFavorite={ jest.fn() }
+        selectCard={ jest.fn() }
+        match={ {url: '/'} }
       />)
 
     wrapper.instance().toggleFavorite()

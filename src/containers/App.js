@@ -10,16 +10,15 @@ import { connect } from 'react-redux'
 import 'react-router-modal/css/react-router-modal.css'
 
 
-
 export const App = (props) => {
   return (
-  <div className="splash">
-    <div className="overlay"></div>
-    <div className="splash-green"></div>
+    <div className="splash">
+      <div className="overlay" />
+      <div className="splash-green" />
       <Route exact path='/' component={ Splash } />
       <Route path='/main' component={ Main } />
       <Route path="/favorites" render={() => <Home itemType="favorites" />} />
-      <Route exact path="/shopping" render={() => <Home itemType="shopping" />} />
+      <Route path="/shopping" render={() => <Home itemType="shopping" />} />
       <ModalRoute component={ CardModal } path='*/modal' parentPath={`${props.history.goBack}`} props={{ recipe: props.selectedCard }} />
       <ModalContainer />
     </div>
