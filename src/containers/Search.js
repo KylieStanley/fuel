@@ -21,8 +21,8 @@ export class Search extends Component {
 	handleSubmit = (e) => {
 		e.preventDefault()
 		if (this.state.search) {
-			const newString = cleanSearchString(this.state.search)
-			const url = `https://api.edamam.com/search?q=${newString}&app_id=${apiId}&app_key=${apiKey}&from=0&to=30`
+			const searchString = cleanSearchString(this.state.search)
+			const url = `https://api.edamam.com/search?q=${searchString}&app_id=${apiId}&app_key=${apiKey}&from=0&to=30`
 			this.props.fetchRecipes(url)
 		}
 	}
