@@ -1,7 +1,7 @@
 import React from 'react'
 import { Home } from '../Home'
 import Main  from '../containers/Main'
-import { App }  from '../containers/App'
+import { App, mapStateToProps }  from '../containers/App'
 import Splash from '../components/Splash'
 import { shallow, mount } from 'enzyme'
 import { Route, component, render } from 'react-router-dom'
@@ -94,6 +94,18 @@ describe('App', () => {
         </Provider>
       )
       expect(wrapper.find(Splash).length).toEqual(1)
+    })
+  })
+
+  describe('mapStateToProps', () => {
+    it('should return a state with a card selected', () => {
+      const mockState = {
+        selectedCard: { name: 'chicken' },
+        recipes: [{ name: 'salmon'}]
+      }
+      const expected = { selectedCard: mockState.selectedCard }
+      const result = mapStateToProps(mockState)
+      expect(result).toEqual(expected)
     })
   })
 })
