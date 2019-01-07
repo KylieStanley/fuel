@@ -1,8 +1,6 @@
 import * as actions from './index';
 
 describe('actions', () => {
-
-
 	it('should have a type of ADD_FAVORITE with a favorite Object', () => {
 		const favorite = {name: 'Chicken Pasta'}
 		const expected = {
@@ -55,6 +53,17 @@ describe('actions', () => {
 		}
 
 		const result = actions.fetchRecipeSuccess(recipes)
+		expect(result).toEqual(expected)
+	})
+
+	it('should have a type of SELECT_CARD with a recipe object', () => {
+		const recipe = {name: 'chicken'}
+		const expected = {
+			type: 'SELECT_CARD',
+			recipe,
+		}
+
+		const result = actions.selectCard(recipe)
 		expect(result).toEqual(expected)
 	})
 })

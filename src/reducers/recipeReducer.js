@@ -2,8 +2,6 @@ export const recipeReducer = (state=[], action) => {
   switch(action.type) {
   case 'FETCH_RECIPE_SUCCESS':
     return action.recipes
-  case 'SEARCH_RECIPE_SUCCESS':
-    return [...state, action.recipes]
   default: 
     return state
   }

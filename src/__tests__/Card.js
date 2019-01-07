@@ -1,7 +1,7 @@
 import React from 'react'
 import { shallow } from 'enzyme'
 import { Card, mapStateToProps, mapDispatchToProps } from '../containers/Card'
-import { addFavorite, removeFavorite } from '../actions'
+import { addFavorite, removeFavorite, selectCard } from '../actions'
 
 
 describe('Card', () => {
@@ -89,6 +89,13 @@ describe('Card', () => {
       const actionToDispatch = removeFavorite(mockRecipe)
       const result = mapDispatchToProps(mockDispatch)
       result.removeFavorite(mockRecipe)
+      expect(mockDispatch).toHaveBeenCalledWith(actionToDispatch)
+    })
+
+    it('should call dispatch with the correct params for selectCard', () => {
+      const actionToDispatch = selectCard(mockRecipe)
+      const result = mapDispatchToProps(mockDispatch)
+      result.selectCard(mockRecipe)
       expect(mockDispatch).toHaveBeenCalledWith(actionToDispatch)
     })
   })

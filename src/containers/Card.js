@@ -5,7 +5,6 @@ import '../styles/main.scss';
 import { Link, withRouter } from 'react-router-dom'
 
 
-
 export class Card extends Component {
 
 	toggleFavorite = (favorite) => {
