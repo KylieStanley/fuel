@@ -44,6 +44,7 @@ describe('CardContainer', () => {
 			}
 			const expected = { recipes: mockState.recipes, favorites: mockState.favorites }
 			const result = mapStateToProps(mockState)
+			
 			expect(result).toEqual(expected)
 		})
 	})

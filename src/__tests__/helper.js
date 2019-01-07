@@ -32,6 +32,7 @@ describe('cleanSearchString', () => {
 	it('should take in a string and return a modified string', () => {
 		let result = cleanSearchString('Chicken Pasta')
 		let expected = 'Chicken%20Pasta'
+		
 		expect(result).toEqual(expected)
 	})
 })

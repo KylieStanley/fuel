@@ -54,6 +54,7 @@ describe('Main', () => {
 			const actionToDispatch = fetchRecipes(url)
 			const result = mapDispatchToProps(mockDispatch)
 			result.fetchRecipes(url)
+			
 			expect(mockDispatch).toHaveBeenCalledWith(actionToDispatch)
 		})
 	})
