@@ -31,6 +31,14 @@ describe('App', () => {
     expect(wrapper.find(Route).length).toEqual(4)
   })
 
+  it('should render four possible routes', () => {
+    expect(wrapper.find(ModalRoute).length).toEqual(1)
+  })
+
+  it('should render four possible routes', () => {
+    expect(wrapper.find(ModalContainer).length).toEqual(1)
+  })
+
   describe('routes', () => {
     let mockStore
     let mockRecipe
