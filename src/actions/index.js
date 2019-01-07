@@ -28,7 +28,7 @@ export const searchRecipeSuccess = (recipes) => ({
    recipes
 })
 
-export const selectCard = (recipes) => ({
+export const selectCard = (recipe) => ({
    type: 'SELECT_CARD',
-   recipes
+   recipe
 })
