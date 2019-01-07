@@ -10,7 +10,7 @@ import Menu from '../Menu'
 export class Main extends Component {
 
 	componentDidMount() {
-		if(this.props.recipes.length === 0) {
+		if (this.props.recipes.length === 0) {
 			let url = `https://api.edamam.com/search?q=ma&app_id=${apiId}&app_key=${apiKey}&from=0&to=30`
 			this.props.fetchRecipes(url)	
 		}

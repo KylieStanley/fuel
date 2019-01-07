@@ -4,21 +4,30 @@ import { shallow } from 'enzyme'
 import { Main, mapStateToProps, mapDispatchToProps } from '../containers/Main'
 import { fetchRecipes } from '../thunks/fetchRecipes'
 
+
 jest.mock('../thunks/fetchRecipes')
 
 describe('Main', () => {
 	let wrapper
+	let mockRecipes
 
 	beforeEach(() => {
-		wrapper = shallow(<Main fetchRecipes={ jest.fn() } />)
+		mockRecipes = []
+		wrapper = shallow(<Main recipes={ mockRecipes } fetchRecipes={ jest.fn() } />)
 	})
 
 	it('should match the snapshot', () => {
 		expect(wrapper).toMatchSnapshot()
 	})
 
-	it('should call fetchRecipes when mounted', () => {
+	it('should call fetchRecipes when mounted if there are no recipes in store', () => {
 		expect(wrapper.instance().props.fetchRecipes).toHaveBeenCalled()
+	})
+
+	it('should not call fetchRecipes recipes in store from search', () => {
+		wrapper = shallow(<Main recipes={{ name: 'Chicken' }} fetchRecipes={ jest.fn() } />)
+
+		expect(wrapper.instance().props.fetchRecipes).not.toHaveBeenCalled()
 	})	
 
 	describe('mapStateToProps', () => {

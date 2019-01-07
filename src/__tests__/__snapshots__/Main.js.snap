@@ -19,6 +19,7 @@ ShallowWrapper {
         ],
       }
     }
+    recipes={Array []}
   />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
