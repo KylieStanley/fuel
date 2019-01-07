@@ -21,6 +21,12 @@ describe('recipeReducer', () => {
 			const result = isLoading(false, actions.isLoading(bool))
 			expect(result).toEqual(bool)
 		})
+
+		it('should return default state', () => {
+		const expected = false
+		const result = isLoading(undefined, false)
+		expect(result).toEqual(expected)
+	})
 	})
 
 	describe('hasErrored', () => {
@@ -29,5 +35,11 @@ describe('recipeReducer', () => {
 			const result = hasErrored('', actions.hasErrored(message))
 			expect(result).toEqual(message)
 		})
+
+		it('should return default state', () => {
+		const expected = ''
+		const result = hasErrored(undefined, '')
+		expect(result).toEqual(expected)
+	})
 	})
 })
