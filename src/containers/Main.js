@@ -4,7 +4,7 @@ import CardContainer from '../containers/CardContainer'
 import { fetchRecipes } from '../thunks/fetchRecipes'
 import { connect } from 'react-redux'
 import { apiId, apiKey } from '../apiKey'
-import Menu from '../Menu'
+import Menu from '../components/Menu'
 
 
 export class Main extends Component {

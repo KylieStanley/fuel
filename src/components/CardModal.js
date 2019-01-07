@@ -1,7 +1,7 @@
 import React from 'react'
-import './styles/main.scss';
+import '../styles/main.scss';
 
-export const Modal = (props) => {
+export const CardModal = (props) => {
 	const { recipe } = props
 
 	return (

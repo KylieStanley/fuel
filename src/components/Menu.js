@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import './styles/main.scss';
+import '../styles/main.scss';
 import { NavLink } from 'react-router-dom'
 
 export class Menu extends Component {

@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import '../styles/main.scss';
 import { Route, withRouter } from 'react-router-dom'
-import Splash from '../Splash'
+import Splash from '../components/Splash'
 import Home from '../Home'
-import { Modal } from '../Modal'
+import { CardModal } from '../components/CardModal'
 import Main from './Main'
 import { ModalContainer, ModalRoute } from 'react-router-modal';
 import { connect } from 'react-redux'
@@ -20,7 +20,7 @@ export const App = (props) => {
       <Route path='/main' component={ Main } />
       <Route path="/favorites" render={() => <Home itemType="favorites" />} />
       <Route exact path="/shopping" render={() => <Home itemType="shopping" />} />
-      <ModalRoute component={ Modal } path='*/modal' parentPath={`${props.history.goBack}`} props={{ recipe: props.selectedCard }} />
+      <ModalRoute component={ CardModal } path='*/modal' parentPath={`${props.history.goBack}`} props={{ recipe: props.selectedCard }} />
       <ModalContainer />
     </div>
   );
