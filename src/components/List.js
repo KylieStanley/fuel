@@ -1,9 +1,8 @@
 import React from 'react'
-import Menu	 from './components/Menu'
-import CardContainer from './containers/CardContainer'
+import Menu	 from './Menu'
+import CardContainer from '../containers/CardContainer'
 
-export const Home = (props) => {
-
+export const List = (props) => {
 	return (
 		<div className="main-container">
 		<Menu />
@@ -13,4 +12,4 @@ export const Home = (props) => {
 	)
 }
 
-export default Home
+export default List

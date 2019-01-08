@@ -1,13 +1,13 @@
 import React from 'react'
 import { shallow } from 'enzyme'
-import Home from '../Home'
+import List from '../components/List'
 
-describe('Home', () => {
+describe('List', () => {
   let wrapper
 
   beforeEach(() => {
     wrapper = shallow(
-    	<Home />)
+    	<List />)
   })
 
   it('should match the snapshot', () => {
