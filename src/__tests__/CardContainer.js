@@ -35,6 +35,15 @@ describe('CardContainer', () => {
 		expect(wrapper.find(Card).length).toEqual(1)
 	})
 
+	it('should render a message if there are no favorites', () => {
+		wrapper = shallow(<CardContainer 
+			recipes={ mockRecipes } 
+			favorites={ [] } 
+			itemType={ 'favorites' }
+		/>)
+		expect(wrapper.find('h2').length).toEqual(1)
+	})
+
 	describe('mapStateToProps', () => {
 		it('should return an array of recipes and array of favorites', () => {
 			const mockState = {
