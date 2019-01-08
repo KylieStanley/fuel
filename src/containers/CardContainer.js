@@ -11,13 +11,12 @@ export const CardContainer = (props) => {
 		recipes = props.favorites
 	}
 
+	let error = !recipes.length && recipes === props.favorites ? <h2>You have no favorites!</h2> : null
+
 	return (
 		<div className="card-container">
-			{
-				recipes.map(recipe => {
-					return <Card recipe={recipe}/>
-				})
-			}
+			{ error }
+			{ recipes.map(recipe => <Card recipe={recipe}/>) }
 		</div>
 	)
 }

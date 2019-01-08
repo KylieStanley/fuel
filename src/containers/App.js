@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import '../styles/main.scss';
 import { Route, withRouter } from 'react-router-dom'
 import Splash from '../components/Splash'
