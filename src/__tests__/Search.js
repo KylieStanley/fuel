@@ -37,6 +37,16 @@ describe('Search', () => {
     expect(spy).toHaveBeenCalled()
   })
 
+  it('should called set the state of filter on handleChange of a filter option', () => {
+    const spy = jest.spyOn(wrapper.instance(), 'handleSubmit')
+    const mockEvent = {
+      preventDefault() {},
+      target: { name: 'filter', value: 'high-protein' }
+    }
+    wrapper.instance().handleChange(mockEvent)
+    expect(spy).toHaveBeenCalled()
+  })
+
   it('should called cleanSearchString on handleSubmit', () => {
     const mockEvent = {
       preventDefault() {},
