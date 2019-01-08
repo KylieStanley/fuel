@@ -1,17 +1,17 @@
 import React from 'react'
 import { shallow } from 'enzyme'
-import { Search, mapDispatchToProps } from '../containers/Search'
+import { Form, mapDispatchToProps } from '../containers/Form'
 import { fetchRecipes } from '../thunks/fetchRecipes'
 import * as helper from '../helper'
 
 jest.mock('../helper')
 jest.mock('../thunks/fetchRecipes')
 
-describe('Search', () => {
+describe('Form', () => {
   let wrapper
 
   beforeEach(() => {
-    wrapper = shallow(<Search fetchRecipes={ jest.fn() }/>)
+    wrapper = shallow(<Form fetchRecipes={ jest.fn() }/>)
   })
 
   it('should match the snapshot', () => {

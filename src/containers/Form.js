@@ -6,7 +6,7 @@ import { apiId, apiKey } from '../apiKey'
 import { fetchRecipes } from '../thunks/fetchRecipes'
 
 
-export class Search extends Component {
+export class Form extends Component {
 	constructor() {
 		super()
 		this.state = {
@@ -64,4 +64,4 @@ export const mapDispatchToProps = (dispatch) => ({
 })
 
 
-export default connect(null, mapDispatchToProps)(Search)
+export default connect(null, mapDispatchToProps)(Form)

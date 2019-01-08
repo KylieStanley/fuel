@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import Search from './Search'
+import Form from './Form'
 import CardContainer from '../containers/CardContainer'
 import { fetchRecipes } from '../thunks/fetchRecipes'
 import { connect } from 'react-redux'
@@ -26,7 +26,7 @@ export class Main extends Component {
 				</div>
 				<Menu />
 				</div>
-				<Search />
+				<Form />
 				<CardContainer />
 			</div>
 		)
