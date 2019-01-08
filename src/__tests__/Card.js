@@ -10,7 +10,7 @@ describe('Card', () => {
   let mockFavorites
 
   beforeEach(() => {
-    mockRecipe = {name: 'chicken pasta', url: 'chicken.com'}
+    mockRecipe = {name: 'chicken pasta', url: 'chicken.com', dietLabel: ['Low Carb'] }
   	mockFavorites = [{name: 'chicken pasta', url: 'chicken.com'}, 
       {name: 'salmon steak', url: 'fish.jpg'}]
     wrapper = shallow(
@@ -43,7 +43,7 @@ describe('Card', () => {
   })
 
    it('should call addFavorite if there is no match', () => {
-    mockRecipe = {name: 'chicken pasta', url: 'salmon.com'}
+    mockRecipe = {name: 'chicken pasta', url: 'salmon.com', dietLabel: ['Low Carb']}
     wrapper = shallow(
       <Card 
         recipe={ mockRecipe }
