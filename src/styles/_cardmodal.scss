@@ -1,18 +1,53 @@
 .expanded-card {
-	height: 370px;
-	width: 600px;
-	display: flex;
-	flex-direction: column;
+	align-items: center;
 	border-radius: 4px;
-	border: 5px solid #232323;
+	border: 6px solid #232323;
+	display: grid;
+	grid-template-rows: auto 40px 1fr 37px; 
+	height: 390px;
+	width: 640px;
 }
 
 .expanded-title {
 	background-color: #232323;
 	color: #fff;
-	padding: 8px;
+	padding: 10px;
 }
 
 .expanded-info {
+	border-bottom: 2px solid #232323;
 	display: flex;
+	justify-content: space-between;
+	padding: 8px;
+}
+
+.ingredients {
+	align-self: baseline;
+	padding: 8px 10px;
+	overflow-y: scroll;
+	max-height: 100%;
+
+	&::-webkit-scrollbar { 
+    display: none; 
+	}
+}
+
+.ingredients-title {
+	font-weight: bold;
+}
+
+.link {
+	border-top: 2px solid #232323;
+	color: #232323;
+	font-weight: bold;
+	padding: 8px;
+	text-align: right;
+	text-decoration: none;
+	width: 100%;
+}
+
+ul {
+	column-count: 2;
+  column-gap: 22px;
+	padding-left: 23px;
 }

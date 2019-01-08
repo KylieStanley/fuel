@@ -1,12 +1,13 @@
 export const cleanRecipes = (recipes) => {
-	return recipes.map(currentItem => ({
-		name: currentItem.recipe.label,
-		yield: currentItem.recipe.yield,
-		calories: Math.round(currentItem.recipe.calories / currentItem.recipe.yield),
-		dietLabel: currentItem.recipe.dietLabels,
-		url: currentItem.recipe.url,
-		image: currentItem.recipe.image,
-		source: currentItem.recipe.source
+	return recipes.map(currentRecipe => ({
+		name: currentRecipe.recipe.label,
+		yield: currentRecipe.recipe.yield,
+		calories: Math.round(currentRecipe.recipe.calories / currentRecipe.recipe.yield),
+		dietLabel: currentRecipe.recipe.dietLabels,
+		url: currentRecipe.recipe.url,
+		image: currentRecipe.recipe.image,
+		source: currentRecipe.recipe.source,
+		ingredients: currentRecipe.recipe.ingredientLines
 	}))
 }
 
