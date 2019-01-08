@@ -15,13 +15,14 @@ export const CardContainer = (props) => {
 
 	return (
 		<div className="card-container">
+			{ props.isLoading ? <img src="../loading.gif"/> : recipes.map(recipe => <Card recipe={recipe}/>) }
 			{ error }
-			{ recipes.map(recipe => <Card recipe={recipe}/>) }
 		</div>
 	)
 }
 
 export const mapStateToProps = (state) => ({
+	isLoading: state.isLoading,
 	recipes: state.recipes,
 	favorites: state.favorites
 })

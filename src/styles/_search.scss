@@ -1,6 +1,9 @@
 form {
-	margin: 20px auto;
-	position: relative;
+  justify-content: space-evenly;
+  width: 450px;
+  margin: 20px auto;
+  position: relative;
+  display: flex;
 }
 
 input {
@@ -26,3 +29,21 @@ input {
 }
 
 
+.styled-select {
+	border: 2px solid #232323;
+  background: url(http://i62.tinypic.com/15xvbd5.png) no-repeat 93% 0;
+  height: 37px;
+  overflow: hidden;
+  width: 200px;
+  border-radius: 20px;
+	background-color: white;
+}
+
+.styled-select select {
+	background: transparent;
+	border: none;
+	font-size: 14px;
+	height: 32px;
+	outline: none;
+	width: 268px;
+}
