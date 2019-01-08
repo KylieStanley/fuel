@@ -28,7 +28,7 @@ export class Form extends Component {
 
 	handleSubmit = (e) => {
 		const { search, filter } = this.state
-		const dietType = `&diet=${filter}` || null
+		const dietType = filter && `&diet=${filter}`
 		e.preventDefault()
 		if (search) {
 			const searchString = cleanSearchString(search)
@@ -44,14 +44,12 @@ export class Form extends Component {
 			<input type="text" name="search" placeholder="Search for Recipes" value={this.state.search} onChange={this.handleChange} />
 			<button className="search-btn"><i className="fas fa-search"></i></button>
 			</div>
-			<div class="styled-select white">
+			<div className="select-container">
 			<select name="filter" onChange={this.handleChange}>  
 				<option value="">Filter by Diet</option>
-				<option value="high-carb">High Carb</option>
 				<option value="balanced">Balanced</option>
 				<option value="low-carb">Low Carb</option>
 				<option value="high-protein">High Protein</option>
-				<option value="high-fiber">High Fiber</option>
 			</select>
 			</div>
 		</form>

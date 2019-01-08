@@ -27,7 +27,7 @@ ShallowWrapper {
         </h1>,
         <Connect(CardContainer) />,
       ],
-      "className": "main-container",
+      "className": "list-container",
     },
     "ref": null,
     "rendered": Array [
@@ -98,7 +98,7 @@ ShallowWrapper {
           </h1>,
           <Connect(CardContainer) />,
         ],
-        "className": "main-container",
+        "className": "list-container",
       },
       "ref": null,
       "rendered": Array [

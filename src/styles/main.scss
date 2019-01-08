@@ -1,5 +1,5 @@
 @import 'splash';
-@import 'home';
+@import 'list';
 @import 'form';
 @import 'cardcontainer';
 @import 'app';
@@ -41,16 +41,17 @@ button {
 	border: none;
 	box-shadow: none;
 	cursor: pointer;
-	padding: 0;
 	outline: none;
+	padding: 0;
 }
 
 .main-container {
 	display: grid;
-	position: absolute;
-	z-index: 2;
-	width: 100%;
+	grid-template-rows: 216px 77px 1fr;
 	height: 100%;
+	position: absolute;
+	width: 100%;
+	z-index: 2;
 }
 
 .header-menu {

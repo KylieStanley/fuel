@@ -3,7 +3,7 @@ import '../styles/main.scss';
 
 export const CardModal = (props) => {
 	const { recipe } = props
-	const ingredientList = recipe.ingredients.map(ingredient => <li>{ ingredient }</li>)
+	const ingredientList = recipe.ingredients.map(ingredient => <li key={ingredient}>{ ingredient }</li>)
 
 	return (
 		<div className="expanded-card">

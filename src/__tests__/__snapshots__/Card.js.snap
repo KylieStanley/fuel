@@ -222,7 +222,7 @@ ShallowWrapper {
               },
               Object {
                 "instance": null,
-                "key": undefined,
+                "key": "1546991645940",
                 "nodeType": "host",
                 "props": Object {
                   "children": "Low Carb",
@@ -421,7 +421,7 @@ ShallowWrapper {
                 },
                 Object {
                   "instance": null,
-                  "key": undefined,
+                  "key": "1546991645940",
                   "nodeType": "host",
                   "props": Object {
                     "children": "Low Carb",

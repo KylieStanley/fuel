@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Ropa+Sans');
+
 form {
   justify-content: space-evenly;
   width: 450px;
@@ -29,7 +31,7 @@ input {
 }
 
 
-.styled-select {
+.select-container {
 	border: 2px solid #232323;
   background: url(http://i62.tinypic.com/15xvbd5.png) no-repeat 93% 0;
   height: 37px;
@@ -39,11 +41,13 @@ input {
 	background-color: white;
 }
 
-.styled-select select {
+.select-container select {
 	background: transparent;
 	border: none;
-	font-size: 14px;
-	height: 32px;
+	color: gray;
+	font-family: 'Ropa Sans', sans-serif;
+	font-size: 1rem;
+	height: 35px;
 	outline: none;
 	width: 268px;
 }

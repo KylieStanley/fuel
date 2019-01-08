@@ -35,7 +35,7 @@ export class Card extends Component {
 						<button className="fave-btn" onClick={ this.toggleFavorite }>
 							{ favoriteClass }
 						</button>
-						{ recipe.dietLabel.map(label => <p>{ label }</p>) }
+						{ recipe.dietLabel.map(label => <p key={ Date.now() } >{ label }</p>) }
 					</div>
 				</div>
 			</div>

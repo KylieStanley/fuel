@@ -220,7 +220,7 @@ ShallowWrapper {
             "rendered": Array [
               Object {
                 "instance": null,
-                "key": undefined,
+                "key": "chicken",
                 "nodeType": "host",
                 "props": Object {
                   "children": "chicken",
@@ -231,7 +231,7 @@ ShallowWrapper {
               },
               Object {
                 "instance": null,
-                "key": undefined,
+                "key": "beef",
                 "nodeType": "host",
                 "props": Object {
                   "children": "beef",
@@ -459,7 +459,7 @@ ShallowWrapper {
               "rendered": Array [
                 Object {
                   "instance": null,
-                  "key": undefined,
+                  "key": "chicken",
                   "nodeType": "host",
                   "props": Object {
                     "children": "chicken",
@@ -470,7 +470,7 @@ ShallowWrapper {
                 },
                 Object {
                   "instance": null,
-                  "key": undefined,
+                  "key": "beef",
                   "nodeType": "host",
                   "props": Object {
                     "children": "beef",

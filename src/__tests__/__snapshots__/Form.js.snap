@@ -37,7 +37,7 @@ ShallowWrapper {
           </button>
         </div>,
         <div
-          class="styled-select white"
+          className="select-container"
         >
           <select
             name="filter"
@@ -47,11 +47,6 @@ ShallowWrapper {
               value=""
             >
               Filter by Diet
-            </option>
-            <option
-              value="high-carb"
-            >
-              High Carb
             </option>
             <option
               value="balanced"
@@ -67,11 +62,6 @@ ShallowWrapper {
               value="high-protein"
             >
               High Protein
-            </option>
-            <option
-              value="high-fiber"
-            >
-              High Fiber
             </option>
           </select>
         </div>,
@@ -161,11 +151,6 @@ ShallowWrapper {
               Filter by Diet
             </option>
             <option
-              value="high-carb"
-            >
-              High Carb
-            </option>
-            <option
               value="balanced"
             >
               Balanced
@@ -180,13 +165,8 @@ ShallowWrapper {
             >
               High Protein
             </option>
-            <option
-              value="high-fiber"
-            >
-              High Fiber
-            </option>
           </select>,
-          "class": "styled-select white",
+          "className": "select-container",
         },
         "ref": null,
         "rendered": Object {
@@ -199,11 +179,6 @@ ShallowWrapper {
                 value=""
               >
                 Filter by Diet
-              </option>,
-              <option
-                value="high-carb"
-              >
-                High Carb
               </option>,
               <option
                 value="balanced"
@@ -219,11 +194,6 @@ ShallowWrapper {
                 value="high-protein"
               >
                 High Protein
-              </option>,
-              <option
-                value="high-fiber"
-              >
-                High Fiber
               </option>,
             ],
             "name": "filter",
@@ -241,18 +211,6 @@ ShallowWrapper {
               },
               "ref": null,
               "rendered": "Filter by Diet",
-              "type": "option",
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": "High Carb",
-                "value": "high-carb",
-              },
-              "ref": null,
-              "rendered": "High Carb",
               "type": "option",
             },
             Object {
@@ -291,18 +249,6 @@ ShallowWrapper {
               "rendered": "High Protein",
               "type": "option",
             },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": "High Fiber",
-                "value": "high-fiber",
-              },
-              "ref": null,
-              "rendered": "High Fiber",
-              "type": "option",
-            },
           ],
           "type": "select",
         },
@@ -335,7 +281,7 @@ ShallowWrapper {
             </button>
           </div>,
           <div
-            class="styled-select white"
+            className="select-container"
           >
             <select
               name="filter"
@@ -345,11 +291,6 @@ ShallowWrapper {
                 value=""
               >
                 Filter by Diet
-              </option>
-              <option
-                value="high-carb"
-              >
-                High Carb
               </option>
               <option
                 value="balanced"
@@ -365,11 +306,6 @@ ShallowWrapper {
                 value="high-protein"
               >
                 High Protein
-              </option>
-              <option
-                value="high-fiber"
-              >
-                High Fiber
               </option>
             </select>
           </div>,
@@ -459,11 +395,6 @@ ShallowWrapper {
                 Filter by Diet
               </option>
               <option
-                value="high-carb"
-              >
-                High Carb
-              </option>
-              <option
                 value="balanced"
               >
                 Balanced
@@ -478,13 +409,8 @@ ShallowWrapper {
               >
                 High Protein
               </option>
-              <option
-                value="high-fiber"
-              >
-                High Fiber
-              </option>
             </select>,
-            "class": "styled-select white",
+            "className": "select-container",
           },
           "ref": null,
           "rendered": Object {
@@ -497,11 +423,6 @@ ShallowWrapper {
                   value=""
                 >
                   Filter by Diet
-                </option>,
-                <option
-                  value="high-carb"
-                >
-                  High Carb
                 </option>,
                 <option
                   value="balanced"
@@ -517,11 +438,6 @@ ShallowWrapper {
                   value="high-protein"
                 >
                   High Protein
-                </option>,
-                <option
-                  value="high-fiber"
-                >
-                  High Fiber
                 </option>,
               ],
               "name": "filter",
@@ -539,18 +455,6 @@ ShallowWrapper {
                 },
                 "ref": null,
                 "rendered": "Filter by Diet",
-                "type": "option",
-              },
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "host",
-                "props": Object {
-                  "children": "High Carb",
-                  "value": "high-carb",
-                },
-                "ref": null,
-                "rendered": "High Carb",
                 "type": "option",
               },
               Object {
@@ -587,18 +491,6 @@ ShallowWrapper {
                 },
                 "ref": null,
                 "rendered": "High Protein",
-                "type": "option",
-              },
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "host",
-                "props": Object {
-                  "children": "High Fiber",
-                  "value": "high-fiber",
-                },
-                "ref": null,
-                "rendered": "High Fiber",
                 "type": "option",
               },
             ],
