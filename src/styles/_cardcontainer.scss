@@ -1,9 +1,9 @@
 .card-container {
 	padding: 10px;
 	display: flex;
-	justify-content: space-around;
+	justify-content: center;
 	flex-wrap: wrap;
 	background-color: #F4F4F4;
-	width: 85%;
+	max-width: 85%;
 	margin: 0 auto;
 }

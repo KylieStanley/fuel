@@ -18,7 +18,7 @@
 	border-bottom: 2px solid #232323;
 	display: flex;
 	justify-content: space-between;
-	padding: 8px;
+	padding: 9px;
 }
 
 .ingredients {
@@ -44,6 +44,10 @@
 	text-align: right;
 	text-decoration: none;
 	width: 100%;
+
+	&:hover {
+		color: #3a9e57;
+	}
 }
 
 ul {

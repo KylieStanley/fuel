@@ -4,8 +4,12 @@
 	display: grid;
 	grid-template-rows: 110px 1fr;
 	height: 300px;
-	margin: 8px 0;
+	margin: 8px;
 	width: 200px;
+}
+
+.recipe-name:hover {
+	color: #3a9e57;
 }
 
 .image {

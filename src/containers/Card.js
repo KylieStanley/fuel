@@ -29,13 +29,13 @@ export class Card extends Component {
 				<div className="image" style={{ backgroundImage: `url(${ recipe.image })` }} />
 				<div className="recipe-info">
 					<Link to={`${this.props.match.url}/modal`} onClick={this.props.selectCard.bind(null, this.props.recipe)}>
-						<h3>{ recipe.name }</h3>
+						<h3 className="recipe-name">{ recipe.name }</h3>
 					</Link>	
 					<div className="card-bottom">
 						<button className="fave-btn" onClick={ this.toggleFavorite }>
 							{ favoriteClass }
 						</button>
-						<p>{ recipe.dietLabel }</p>
+						{ recipe.dietLabel.map(label => <p>{ label }</p>) }
 					</div>
 				</div>
 			</div>
