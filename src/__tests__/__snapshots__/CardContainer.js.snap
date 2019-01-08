@@ -11,6 +11,7 @@ ShallowWrapper {
         },
       ]
     }
+    isLoading={false}
     itemType="recipes"
     recipes={
       Array [
@@ -37,7 +38,6 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-        null,
         Array [
           <withRouter(Connect(Card))
             recipe={
@@ -54,12 +54,12 @@ ShallowWrapper {
             }
           />,
         ],
+        null,
       ],
       "className": "card-container",
     },
     "ref": null,
     "rendered": Array [
-      null,
       Object {
         "instance": null,
         "key": undefined,
@@ -86,6 +86,7 @@ ShallowWrapper {
         "rendered": null,
         "type": [Function],
       },
+      null,
     ],
     "type": "div",
   },
@@ -96,7 +97,6 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          null,
           Array [
             <withRouter(Connect(Card))
               recipe={
@@ -113,12 +113,12 @@ ShallowWrapper {
               }
             />,
           ],
+          null,
         ],
         "className": "card-container",
       },
       "ref": null,
       "rendered": Array [
-        null,
         Object {
           "instance": null,
           "key": undefined,
@@ -145,6 +145,7 @@ ShallowWrapper {
           "rendered": null,
           "type": [Function],
         },
+        null,
       ],
       "type": "div",
     },

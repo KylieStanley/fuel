@@ -15,6 +15,7 @@ describe('CardContainer', () => {
 			recipes={ mockRecipes } 
 			favorites={ mockFavorites } 
 			itemType={ 'recipes' }
+			isLoading={ false }
 		/>)
 	})
 
@@ -31,6 +32,8 @@ describe('CardContainer', () => {
 			recipes={ mockRecipes } 
 			favorites={ mockFavorites } 
 			itemType={ 'favorites' }
+			isLoading={ false }
+
 		/>)
 		expect(wrapper.find(Card).length).toEqual(1)
 	})
@@ -40,8 +43,21 @@ describe('CardContainer', () => {
 			recipes={ mockRecipes } 
 			favorites={ [] } 
 			itemType={ 'favorites' }
+			isLoading={ false }
+
 		/>)
 		expect(wrapper.find('h2').length).toEqual(1)
+	})
+
+		it('should render a loading image if the cards are being fetched', () => {
+		wrapper = shallow(<CardContainer 
+			recipes={ mockRecipes } 
+			favorites={ [] } 
+			itemType={ 'favorites' }
+			isLoading={ true }
+
+		/>)
+		expect(wrapper.find('img').length).toEqual(1)
 	})
 
 	describe('mapStateToProps', () => {

@@ -46,11 +46,12 @@ export class Search extends Component {
 			</div>
 			<div class="styled-select white">
 			<select name="filter" onChange={this.handleChange}>  
-			<option value="high-carb">High Carb</option>
-			<option value="balanced">Balanced</option>
-			<option value="low-carb">Low Carb</option>
-			<option value="high-protein">High Protein</option>
-			<option value="high-fiber">High Fiber</option>
+				<option value="">Filter by Diet</option>
+				<option value="high-carb">High Carb</option>
+				<option value="balanced">Balanced</option>
+				<option value="low-carb">Low Carb</option>
+				<option value="high-protein">High Protein</option>
+				<option value="high-fiber">High Fiber</option>
 			</select>
 			</div>
 		</form>
