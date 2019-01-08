@@ -1,6 +1,7 @@
 import React from 'react'
-import { Home } from '../Home'
+import { List } from '../components/List'
 import Main  from '../containers/Main'
+import ErrorPage  from '../components/ErrorPage'
 import { App, mapStateToProps }  from '../containers/App'
 import Splash from '../components/Splash'
 import { shallow, mount } from 'enzyme'
@@ -28,14 +29,14 @@ describe('App', () => {
 	})
 
 	it('should render four possible routes', () => {
-    expect(wrapper.find(Route).length).toEqual(4)
+    expect(wrapper.find(Route).length).toEqual(5)
   })
 
-  it('should render four possible routes', () => {
+  it('should render a ModalRoute route', () => {
     expect(wrapper.find(ModalRoute).length).toEqual(1)
   })
 
-  it('should render four possible routes', () => {
+  it('should render a ModalContainer route', () => {
     expect(wrapper.find(ModalContainer).length).toEqual(1)
   })
 
@@ -52,7 +53,7 @@ describe('App', () => {
       mockStore = { getState: jest.fn(), subscribe: jest.fn(), recipes: mockRecipes, selectedCard: mockRecipe, favorites: mockRecipes, dispatch: jest.fn() } 
     })
 
-    it('routes /favorites to the Home component', () => {
+    it('routes /favorites to the List component', () => {
       const wrapper = mount(
         <Provider store={mockStore}>
           <MemoryRouter initialEntries={['/favorites']}>
@@ -60,10 +61,10 @@ describe('App', () => {
           </MemoryRouter>
         </Provider>
       )
-      expect(wrapper.find(Home).length).toEqual(1)
+      expect(wrapper.find(List).length).toEqual(1)
     })
 
-    it('routes /shopping to the Home component', () => {
+    it('routes /shopping to the List component', () => {
       const wrapper = mount(
         <Provider store={mockStore}>
           <MemoryRouter initialEntries={['/shopping']}>
@@ -71,7 +72,7 @@ describe('App', () => {
           </MemoryRouter>
         </Provider>
       )
-      expect(wrapper.find(Home).length).toEqual(1)
+      expect(wrapper.find(List).length).toEqual(1)
     })
 
     it('routes /main to the Main component', () => {
@@ -94,6 +95,17 @@ describe('App', () => {
         </Provider>
       )
       expect(wrapper.find(Splash).length).toEqual(1)
+    })
+
+    it('routes /error to the ErrorPage component', () => {
+      const wrapper = mount(
+        <Provider store={mockStore}>
+          <MemoryRouter initialEntries={['/error']}>
+            <App selectedCard={ mockRecipe } history={{ goBack: jest.fn() }}/>
+          </MemoryRouter>
+        </Provider>
+      )
+      expect(wrapper.find(ErrorPage).length).toEqual(1)
     })
   })
 

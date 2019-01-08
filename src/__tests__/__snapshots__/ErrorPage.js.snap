@@ -1,9 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Home should match the snapshot 1`] = `
+exports[`ErrorPage should match the snapshot 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <Home />,
+  Symbol(enzyme.__unrendered__): <ErrorPage />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
     "getNode": [Function],
@@ -18,65 +18,63 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-        <Menu />,
-        <h1
-          className="header"
-        >
-          fuel
-          <span />
+        <h1>
+          404
         </h1>,
-        <Connect(CardContainer) />,
+        <h2
+          className="error"
+        >
+          The page you requested cannot be found. Please check your address and try again.
+        </h2>,
+        <NavLink
+          activeClassName="active"
+          aria-current="page"
+          className="home-btn"
+          to="/main"
+        >
+          HOME
+        </NavLink>,
       ],
-      "className": "main-container",
+      "className": "error-page",
     },
     "ref": null,
     "rendered": Array [
       Object {
         "instance": null,
         "key": undefined,
-        "nodeType": "class",
-        "props": Object {},
+        "nodeType": "host",
+        "props": Object {
+          "children": "404",
+        },
         "ref": null,
-        "rendered": null,
-        "type": [Function],
+        "rendered": "404",
+        "type": "h1",
       },
       Object {
         "instance": null,
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": Array [
-            "fuel",
-            <span />,
-          ],
-          "className": "header",
+          "children": "The page you requested cannot be found. Please check your address and try again.",
+          "className": "error",
         },
         "ref": null,
-        "rendered": Array [
-          "fuel",
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": undefined,
-            },
-            "ref": null,
-            "rendered": null,
-            "type": "span",
-          },
-        ],
-        "type": "h1",
+        "rendered": "The page you requested cannot be found. Please check your address and try again.",
+        "type": "h2",
       },
       Object {
         "instance": null,
         "key": undefined,
-        "nodeType": "class",
+        "nodeType": "function",
         "props": Object {
-          "itemType": undefined,
+          "activeClassName": "active",
+          "aria-current": "page",
+          "children": "HOME",
+          "className": "home-btn",
+          "to": "/main",
         },
         "ref": null,
-        "rendered": null,
+        "rendered": "HOME",
         "type": [Function],
       },
     ],
@@ -89,65 +87,63 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <Menu />,
-          <h1
-            className="header"
-          >
-            fuel
-            <span />
+          <h1>
+            404
           </h1>,
-          <Connect(CardContainer) />,
+          <h2
+            className="error"
+          >
+            The page you requested cannot be found. Please check your address and try again.
+          </h2>,
+          <NavLink
+            activeClassName="active"
+            aria-current="page"
+            className="home-btn"
+            to="/main"
+          >
+            HOME
+          </NavLink>,
         ],
-        "className": "main-container",
+        "className": "error-page",
       },
       "ref": null,
       "rendered": Array [
         Object {
           "instance": null,
           "key": undefined,
-          "nodeType": "class",
-          "props": Object {},
+          "nodeType": "host",
+          "props": Object {
+            "children": "404",
+          },
           "ref": null,
-          "rendered": null,
-          "type": [Function],
+          "rendered": "404",
+          "type": "h1",
         },
         Object {
           "instance": null,
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": Array [
-              "fuel",
-              <span />,
-            ],
-            "className": "header",
+            "children": "The page you requested cannot be found. Please check your address and try again.",
+            "className": "error",
           },
           "ref": null,
-          "rendered": Array [
-            "fuel",
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": undefined,
-              },
-              "ref": null,
-              "rendered": null,
-              "type": "span",
-            },
-          ],
-          "type": "h1",
+          "rendered": "The page you requested cannot be found. Please check your address and try again.",
+          "type": "h2",
         },
         Object {
           "instance": null,
           "key": undefined,
-          "nodeType": "class",
+          "nodeType": "function",
           "props": Object {
-            "itemType": undefined,
+            "activeClassName": "active",
+            "aria-current": "page",
+            "children": "HOME",
+            "className": "home-btn",
+            "to": "/main",
           },
           "ref": null,
-          "rendered": null,
+          "rendered": "HOME",
           "type": [Function],
         },
       ],

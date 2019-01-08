@@ -37,25 +37,29 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-        <withRouter(Connect(Card))
-          recipe={
-            Object {
-              "name": "chicken",
+        null,
+        Array [
+          <withRouter(Connect(Card))
+            recipe={
+              Object {
+                "name": "chicken",
+              }
             }
-          }
-        />,
-        <withRouter(Connect(Card))
-          recipe={
-            Object {
-              "name": "salmon",
+          />,
+          <withRouter(Connect(Card))
+            recipe={
+              Object {
+                "name": "salmon",
+              }
             }
-          }
-        />,
+          />,
+        ],
       ],
       "className": "card-container",
     },
     "ref": null,
     "rendered": Array [
+      null,
       Object {
         "instance": null,
         "key": undefined,
@@ -92,25 +96,29 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <withRouter(Connect(Card))
-            recipe={
-              Object {
-                "name": "chicken",
+          null,
+          Array [
+            <withRouter(Connect(Card))
+              recipe={
+                Object {
+                  "name": "chicken",
+                }
               }
-            }
-          />,
-          <withRouter(Connect(Card))
-            recipe={
-              Object {
-                "name": "salmon",
+            />,
+            <withRouter(Connect(Card))
+              recipe={
+                Object {
+                  "name": "salmon",
+                }
               }
-            }
-          />,
+            />,
+          ],
         ],
         "className": "card-container",
       },
       "ref": null,
       "rendered": Array [
+        null,
         Object {
           "instance": null,
           "key": undefined,
