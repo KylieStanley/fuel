@@ -10,7 +10,8 @@ import { App, mapStateToProps } from '../containers/App'
 import Splash from '../components/Splash'
 
 
-jest.mock('../containers/CardContainer')
+jest.mock('../containers/CardContainer', () => () => <div />)
+jest.mock('../containers/ListContainer', () => () => <div />)
 jest.mock('../containers/Main', () => () => <div />)
 
 
@@ -41,17 +42,20 @@ describe('App', () => {
 		let mockStore
 		let mockRecipe
 		let mockRecipes
+		let mockIngredients
 
 		beforeEach(() => {
 			mockRecipe = { name: 'chicken', source: 'Good Eats' }
 			mockRecipes = [mockRecipe]
+			mockIngredients = ['chicken', 'pasta']
 			mockStore = {
 				getState: jest.fn(),
 				subscribe: jest.fn(),
 				recipes: mockRecipes,
 				selectedCard: mockRecipe,
 				favorites: mockRecipes,
-				dispatch: jest.fn()
+				dispatch: jest.fn(),
+				ingredients: mockIngredients
 			}
 		})
 

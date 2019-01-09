@@ -6,8 +6,9 @@
     },
     "extends": "airbnb",
     "rules": {
-     "max-len": ["error", { "code": 160 }],
+     "max-len": ["error", { "code": 200 }],
       "import/prefer-default-export": 0,
+      "react/require-default-props": 0,
       "react/jsx-no-bind": 0,
       "no-shadow": 0,
       "react/no-access-state-in-setstate": 0,

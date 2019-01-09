@@ -1,6 +1,7 @@
 import { combineReducers } from 'redux'
 import { favoriteReducer } from './favoriteReducer'
 import { cardReducer } from './cardReducer'
+import { ingredientReducer } from './ingredientReducer'
 import { recipeReducer, isLoading, hasErrored } from './recipeReducer'
 
 const rootReducer = combineReducers({
@@ -8,7 +9,8 @@ const rootReducer = combineReducers({
 	recipes: recipeReducer,
 	error: hasErrored,
 	isLoading,
-	selectedCard: cardReducer
+	selectedCard: cardReducer,
+	ingredients: ingredientReducer
 })
 
 export default rootReducer

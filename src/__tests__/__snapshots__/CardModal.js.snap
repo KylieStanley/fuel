@@ -4,6 +4,7 @@ exports[`Card should match the snapshot 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <CardModal
+    addIngredients={[MockFunction]}
     recipe={
       Object {
         "dietLabel": Array [
@@ -67,17 +68,27 @@ ShallowWrapper {
             </li>
           </ul>
         </div>,
-        <a
+        <div
           className="link"
-          href="chicken.com"
-          rel="noopener noreferrer"
-          target="_blank"
         >
-          Go To Full Recipe
-          <i
-            className="fas fa-angle-double-right"
-          />
-        </a>,
+          <button
+            className="add-btn"
+            onClick={[Function]}
+            type="button"
+          >
+            Add Ingredients to shopping List +
+          </button>
+          <a
+            href="chicken.com"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            Go To Full Recipe
+            <i
+              className="fas fa-angle-double-right"
+            />
+          </a>
+        </div>,
       ],
       "className": "expanded-card",
     },
@@ -255,32 +266,76 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": Array [
-            "Go To Full Recipe",
-            <i
-              className="fas fa-angle-double-right"
-            />,
+            <button
+              className="add-btn"
+              onClick={[Function]}
+              type="button"
+            >
+              Add Ingredients to shopping List +
+            </button>,
+            <a
+              href="chicken.com"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              Go To Full Recipe
+              <i
+                className="fas fa-angle-double-right"
+              />
+            </a>,
           ],
           "className": "link",
-          "href": "chicken.com",
-          "rel": "noopener noreferrer",
-          "target": "_blank",
         },
         "ref": null,
         "rendered": Array [
-          "Go To Full Recipe",
           Object {
             "instance": null,
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "className": "fas fa-angle-double-right",
+              "children": "Add Ingredients to shopping List +",
+              "className": "add-btn",
+              "onClick": [Function],
+              "type": "button",
             },
             "ref": null,
-            "rendered": null,
-            "type": "i",
+            "rendered": "Add Ingredients to shopping List +",
+            "type": "button",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                "Go To Full Recipe",
+                <i
+                  className="fas fa-angle-double-right"
+                />,
+              ],
+              "href": "chicken.com",
+              "rel": "noopener noreferrer",
+              "target": "_blank",
+            },
+            "ref": null,
+            "rendered": Array [
+              "Go To Full Recipe",
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "className": "fas fa-angle-double-right",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "i",
+              },
+            ],
+            "type": "a",
           },
         ],
-        "type": "a",
+        "type": "div",
       },
     ],
     "type": "div",
@@ -327,17 +382,27 @@ ShallowWrapper {
               </li>
             </ul>
           </div>,
-          <a
+          <div
             className="link"
-            href="chicken.com"
-            rel="noopener noreferrer"
-            target="_blank"
           >
-            Go To Full Recipe
-            <i
-              className="fas fa-angle-double-right"
-            />
-          </a>,
+            <button
+              className="add-btn"
+              onClick={[Function]}
+              type="button"
+            >
+              Add Ingredients to shopping List +
+            </button>
+            <a
+              href="chicken.com"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              Go To Full Recipe
+              <i
+                className="fas fa-angle-double-right"
+              />
+            </a>
+          </div>,
         ],
         "className": "expanded-card",
       },
@@ -515,32 +580,76 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": Array [
-              "Go To Full Recipe",
-              <i
-                className="fas fa-angle-double-right"
-              />,
+              <button
+                className="add-btn"
+                onClick={[Function]}
+                type="button"
+              >
+                Add Ingredients to shopping List +
+              </button>,
+              <a
+                href="chicken.com"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                Go To Full Recipe
+                <i
+                  className="fas fa-angle-double-right"
+                />
+              </a>,
             ],
             "className": "link",
-            "href": "chicken.com",
-            "rel": "noopener noreferrer",
-            "target": "_blank",
           },
           "ref": null,
           "rendered": Array [
-            "Go To Full Recipe",
             Object {
               "instance": null,
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "className": "fas fa-angle-double-right",
+                "children": "Add Ingredients to shopping List +",
+                "className": "add-btn",
+                "onClick": [Function],
+                "type": "button",
               },
               "ref": null,
-              "rendered": null,
-              "type": "i",
+              "rendered": "Add Ingredients to shopping List +",
+              "type": "button",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  "Go To Full Recipe",
+                  <i
+                    className="fas fa-angle-double-right"
+                  />,
+                ],
+                "href": "chicken.com",
+                "rel": "noopener noreferrer",
+                "target": "_blank",
+              },
+              "ref": null,
+              "rendered": Array [
+                "Go To Full Recipe",
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "className": "fas fa-angle-double-right",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "i",
+                },
+              ],
+              "type": "a",
             },
           ],
-          "type": "a",
+          "type": "div",
         },
       ],
       "type": "div",

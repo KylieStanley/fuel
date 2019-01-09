@@ -1,0 +1,231 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ListContainer should match the snapshot 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <ListContainer
+    ingredients={
+      Array [
+        "chicken",
+        "salt",
+        "avocado",
+      ]
+    }
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": <ul
+        className="shopping-list"
+      >
+        <li
+          className="item"
+        >
+          chicken
+        </li>
+        <li
+          className="item"
+        >
+          salt
+        </li>
+        <li
+          className="item"
+        >
+          avocado
+        </li>
+      </ul>,
+      "className": "card-container shopping",
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <li
+            className="item"
+          >
+            chicken
+          </li>,
+          <li
+            className="item"
+          >
+            salt
+          </li>,
+          <li
+            className="item"
+          >
+            avocado
+          </li>,
+        ],
+        "className": "shopping-list",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "chicken",
+            "className": "item",
+          },
+          "ref": null,
+          "rendered": "chicken",
+          "type": "li",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "salt",
+            "className": "item",
+          },
+          "ref": null,
+          "rendered": "salt",
+          "type": "li",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "avocado",
+            "className": "item",
+          },
+          "ref": null,
+          "rendered": "avocado",
+          "type": "li",
+        },
+      ],
+      "type": "ul",
+    },
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": <ul
+          className="shopping-list"
+        >
+          <li
+            className="item"
+          >
+            chicken
+          </li>
+          <li
+            className="item"
+          >
+            salt
+          </li>
+          <li
+            className="item"
+          >
+            avocado
+          </li>
+        </ul>,
+        "className": "card-container shopping",
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <li
+              className="item"
+            >
+              chicken
+            </li>,
+            <li
+              className="item"
+            >
+              salt
+            </li>,
+            <li
+              className="item"
+            >
+              avocado
+            </li>,
+          ],
+          "className": "shopping-list",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "chicken",
+              "className": "item",
+            },
+            "ref": null,
+            "rendered": "chicken",
+            "type": "li",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "salt",
+              "className": "item",
+            },
+            "ref": null,
+            "rendered": "salt",
+            "type": "li",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "avocado",
+              "className": "item",
+            },
+            "ref": null,
+            "rendered": "avocado",
+            "type": "li",
+          },
+        ],
+        "type": "ul",
+      },
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;

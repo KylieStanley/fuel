@@ -27,3 +27,8 @@ export const selectCard = (recipe) => ({
 	type: 'SELECT_CARD',
 	recipe
 })
+
+export const addIngredients = (ingredients) => ({
+	type: 'ADD_INGREDIENTS',
+	ingredients
+})

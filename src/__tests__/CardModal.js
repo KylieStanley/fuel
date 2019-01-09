@@ -1,6 +1,7 @@
 import React from 'react'
 import { shallow } from 'enzyme'
-import CardModal from '../components/CardModal'
+import { CardModal, mapDispatchToProps } from '../containers/CardModal'
+import { addIngredients } from '../actions'
 
 describe('Card', () => {
 	let wrapper
@@ -15,7 +16,7 @@ describe('Card', () => {
 		}
 
 		wrapper = shallow(
-			<CardModal recipe={mockRecipe} />
+			<CardModal recipe={mockRecipe} addIngredients={jest.fn()} />
 		)
 	})
 
@@ -25,5 +26,22 @@ describe('Card', () => {
 
 	it('should render all the ingredients', () => {
 		expect(wrapper.find('li').length).toEqual(2)
+	})
+
+	describe('mapDispatchToProps', () => {
+		let mockDispatch
+
+		beforeEach(() => {
+			mockDispatch = jest.fn()
+		})
+
+		it('should call dispatch with the correct params', () => {
+			const ingredients = ['chicken', 'salt', 'avocado']
+			const actionToDispatch = addIngredients(ingredients)
+			const result = mapDispatchToProps(mockDispatch)
+			result.addIngredients(ingredients)
+
+			expect(mockDispatch).toHaveBeenCalledWith(actionToDispatch)
+		})
 	})
 })

@@ -37,6 +37,9 @@
 }
 
 .link {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
 	border-top: 2px solid #232323;
 	color: #232323;
 	font-weight: bold;
@@ -54,4 +57,28 @@ ul {
 	column-count: 2;
   column-gap: 22px;
 	padding-left: 23px;
+}
+
+.add-btn {
+	font-size: 1.1rem;
+  font-weight: bold;
+  
+  &:hover {
+		color: #3a9e57;
+	}
+}
+
+.shopping {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: baseline;
+}
+
+.shopping-list {
+	column-count: 1;
+}
+
+.item {
+	line-height: 2;
 }

@@ -7,7 +7,7 @@ import { ModalContainer, ModalRoute } from 'react-router-modal'
 import Splash from '../components/Splash'
 import List from '../components/List'
 import ErrorPage from '../components/ErrorPage'
-import CardModal from '../components/CardModal'
+import CardModal from './CardModal'
 import Main from './Main'
 import 'react-router-modal/css/react-router-modal.css'
 
