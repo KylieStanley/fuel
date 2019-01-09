@@ -11,10 +11,10 @@ describe('CardContainer', () => {
 
 	beforeEach(() => {
 		wrapper = shallow(<CardContainer 
-			recipes={ mockRecipes } 
-			favorites={ mockFavorites } 
-			itemType={ 'recipes' }
-			isLoading={ false }
+			recipes={mockRecipes} 
+			favorites={mockFavorites} 
+			itemType={'recipes'}
+			isLoading={false}
 		/>)
 	})
 
@@ -28,10 +28,10 @@ describe('CardContainer', () => {
 
 	it('should render favorites if on the favorites page', () => {
 		wrapper = shallow(<CardContainer 
-			recipes={ mockRecipes } 
-			favorites={ mockFavorites } 
-			itemType={ 'favorites' }
-			isLoading={ false }
+			recipes={mockRecipes} 
+			favorites={mockFavorites} 
+			itemType={'favorites'}
+			isLoading={false}
 
 		/>)
 		expect(wrapper.find(Card).length).toEqual(1)
@@ -39,10 +39,10 @@ describe('CardContainer', () => {
 
 	it('should render a message if there are no favorites', () => {
 		wrapper = shallow(<CardContainer 
-			recipes={ mockRecipes } 
-			favorites={ [] } 
-			itemType={ 'favorites' }
-			isLoading={ false }
+			recipes={mockRecipes} 
+			favorites={[]} 
+			itemType={'favorites'}
+			isLoading={false}
 
 		/>)
 		expect(wrapper.find('h2').length).toEqual(1)
@@ -50,10 +50,10 @@ describe('CardContainer', () => {
 
 		it('should render a loading image if the cards are being fetched', () => {
 		wrapper = shallow(<CardContainer 
-			recipes={ mockRecipes } 
-			favorites={ [] } 
-			itemType={ 'favorites' }
-			isLoading={ true }
+			recipes={mockRecipes} 
+			favorites={[]} 
+			itemType={'favorites'}
+			isLoading={true}
 
 		/>)
 		expect(wrapper.find('img').length).toEqual(1)

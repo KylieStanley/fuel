@@ -2,7 +2,7 @@ import * as actions from './index';
 
 describe('actions', () => {
 	it('should have a type of ADD_FAVORITE with a favorite Object', () => {
-		const favorite = {name: 'Chicken Pasta'}
+		const favorite = { name: 'Chicken Pasta' }
 		const expected = {
 			type: 'ADD_FAVORITE',
 			favorite,
@@ -13,7 +13,7 @@ describe('actions', () => {
 	})
 
 	it('should have a type of REMOVE_FAVORITE with a favorite Object', () => {
-		const favorite = {name: 'Chicken Pasta'}
+		const favorite = { name: 'Chicken Pasta' }
 		const expected = {
 			type: 'REMOVE_FAVORITE',
 			favorite,
@@ -46,7 +46,7 @@ describe('actions', () => {
 	})
 
 	it('should have a type of FETCH_RECIPE_SUCCESS with a recipe array', () => {
-		const recipes = [{name: 'chicken'}]
+		const recipes = [{ name: 'chicken' }]
 		const expected = {
 			type: 'FETCH_RECIPE_SUCCESS',
 			recipes,
@@ -57,7 +57,7 @@ describe('actions', () => {
 	})
 
 	it('should have a type of SELECT_CARD with a recipe object', () => {
-		const recipe = {name: 'chicken'}
+		const recipe = { name: 'chicken' }
 		const expected = {
 			type: 'SELECT_CARD',
 			recipe,

@@ -1,22 +1,23 @@
 import React from 'react'
-import Card from './Card'
-import '../styles/main.scss';
+import '../styles/main.scss'
 import { connect } from 'react-redux'
 import PropTypes from 'prop-types'
+import Card from './Card'
 
 
 export const CardContainer = (props) => {
-	let recipes = props.recipes
+	const { recipes, favorites, isLoading } = props
+	let selectedRecipes = recipes
 
 	if (props.itemType === 'favorites') {
-		recipes = props.favorites
+		selectedRecipes = favorites
 	}
 
-	let error = !recipes.length && recipes === props.favorites ? <h2>You have no favorites!</h2> : null
+	const error = !selectedRecipes.length && selectedRecipes === favorites ? <h2>You have no favorites!</h2> : null
 
 	return (
 		<div className="card-container">
-			{ props.isLoading ? <img src="../loading.gif" alt="spinning circle" /> : recipes.map(recipe => <Card key={recipe.url} recipe={recipe} />) }
+			{ isLoading ? <img src="../loading.gif" alt="spinning circle" /> : selectedRecipes.map(recipe => <Card key={recipe.url} recipe={recipe} />) }
 			{ error }
 		</div>
 	)

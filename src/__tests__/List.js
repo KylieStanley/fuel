@@ -3,14 +3,14 @@ import { shallow } from 'enzyme'
 import List from '../components/List'
 
 describe('List', () => {
-  let wrapper
+	let wrapper
 
-  beforeEach(() => {
-    wrapper = shallow(
-    	<List />)
-  })
+	beforeEach(() => {
+		wrapper = shallow(
+			<List />)
+	})
 
-  it('should match the snapshot', () => {
-    expect(wrapper).toMatchSnapshot()
-  })
+	it('should match the snapshot', () => {
+		expect(wrapper).toMatchSnapshot()
+	})
 })

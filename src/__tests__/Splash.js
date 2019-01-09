@@ -3,13 +3,13 @@ import { shallow } from 'enzyme'
 import Splash from '../components/Splash'
 
 describe('Splash', () => {
-  let wrapper
+	let wrapper
 
-  beforeEach(() => {
-    wrapper = shallow(<Splash />)
-  })
+	beforeEach(() => {
+		wrapper = shallow(<Splash />)
+	})
 
-  it('should match the snapshot', () => {
-    expect(wrapper).toMatchSnapshot()
-  })
+	it('should match the snapshot', () => {
+		expect(wrapper).toMatchSnapshot()
+	})
 })

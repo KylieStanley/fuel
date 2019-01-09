@@ -17,5 +17,5 @@ export default List
 
 
 List.propTypes = {
-	itemType: PropTypes.string.isRequired
+	itemType: PropTypes.string
 }

@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import '../styles/main.scss';
+import '../styles/main.scss'
 import { NavLink } from 'react-router-dom'
 
 export class Menu extends Component {
@@ -11,20 +11,21 @@ export class Menu extends Component {
 	}
 
 	toggleMenu = () => {
-		this.setState({ expanded: !this.state.expanded })
+		const expanded = !this.state.expanded
+		this.setState({ expanded })
 	}
 
 	render() {
-		let toggled = this.state.expanded ? "toggled" : ""
+		const toggled = this.state.expanded ? 'toggled' : ''
 
-			return (
-				<div className={`menu ${toggled}`} onClick={ this.toggleMenu }>
-					<div className="hamburger"></div>
+		return (
+			<div className={`menu ${toggled}`} onClick={this.toggleMenu}>
+				<div className="hamburger" />
 				<NavLink to='/main' className="menu-item home">Home</NavLink>
 				<NavLink to='/favorites' className="menu-item faves">Favorites</NavLink>
 				<NavLink to='/shopping' className="menu-item list">Shopping List</NavLink>
-				</div>
-			)
+			</div>
+		)
 	}
 }
 
