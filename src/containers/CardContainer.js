@@ -2,6 +2,7 @@ import React from 'react'
 import Card from './Card'
 import '../styles/main.scss';
 import { connect } from 'react-redux'
+import PropTypes from 'prop-types'
 
 
 export const CardContainer = (props) => {
@@ -15,7 +16,7 @@ export const CardContainer = (props) => {
 
 	return (
 		<div className="card-container">
-			{ props.isLoading ? <img src="../loading.gif"/> : recipes.map(recipe => <Card key={recipe.name} recipe={recipe} />) }
+			{ props.isLoading ? <img src="../loading.gif"/> : recipes.map(recipe => <Card key={recipe.url} recipe={recipe} />) }
 			{ error }
 		</div>
 	)
@@ -26,5 +27,11 @@ export const mapStateToProps = (state) => ({
 	recipes: state.recipes,
 	favorites: state.favorites
 })
+
+CardContainer.propTypes = {
+	isLoading: PropTypes.bool.isRequired,
+	recipes: PropTypes.array.isRequired,
+	favorites: PropTypes.array.isRequired
+}
 
 export default connect(mapStateToProps)(CardContainer)

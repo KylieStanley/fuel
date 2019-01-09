@@ -9,6 +9,7 @@ import Main from './Main'
 import { ModalContainer, ModalRoute } from 'react-router-modal';
 import { connect } from 'react-redux'
 import 'react-router-modal/css/react-router-modal.css'
+import PropTypes from 'prop-types'
 
 
 export const App = (props) => {
@@ -32,6 +33,11 @@ export const App = (props) => {
 export const mapStateToProps = (state) => ({
   selectedCard: state.selectedCard
 })
+
+
+App.propTypes = {
+  selectedCard: PropTypes.object.isRequired
+}
 
 export default withRouter(connect(mapStateToProps)(App));
 

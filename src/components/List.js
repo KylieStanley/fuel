@@ -1,5 +1,6 @@
 import React from 'react'
 import Menu	 from './Menu'
+import PropTypes from 'prop-types'
 import CardContainer from '../containers/CardContainer'
 
 export const List = (props) => {
@@ -13,3 +14,8 @@ export const List = (props) => {
 }
 
 export default List
+
+
+List.propTypes = {
+	itemType: PropTypes.string.isRequired
+}

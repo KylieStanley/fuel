@@ -4,6 +4,7 @@ import { connect } from 'react-redux'
 import { cleanSearchString } from '../helper'
 import { apiId, apiKey } from '../apiKey'
 import { fetchRecipes } from '../thunks/fetchRecipes'
+import PropTypes from 'prop-types'
 
 
 export class Form extends Component {
@@ -61,5 +62,8 @@ export const mapDispatchToProps = (dispatch) => ({
 	fetchRecipes: (url) => dispatch(fetchRecipes(url))
 })
 
+Form.propTypes = {
+	fetchRecipes: PropTypes.func.isRequired
+}
 
 export default connect(null, mapDispatchToProps)(Form)

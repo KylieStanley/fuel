@@ -3,6 +3,7 @@ import { connect } from 'react-redux'
 import { addFavorite, removeFavorite, selectCard } from '../actions'
 import '../styles/main.scss';
 import { Link, withRouter } from 'react-router-dom'
+import PropTypes from 'prop-types'
 
 
 export class Card extends Component {
@@ -35,7 +36,7 @@ export class Card extends Component {
 						<button className="fave-btn" onClick={ this.toggleFavorite }>
 							{ favoriteClass }
 						</button>
-						{ recipe.dietLabel.map(label => <p key={ Date.now() } >{ label }</p>) }
+						{ recipe.dietLabel.map(label => <p>{ label }</p>) }
 					</div>
 				</div>
 			</div>
@@ -52,5 +53,13 @@ export const mapDispatchToProps = (dispatch) => ({
   removeFavorite: (recipe) => dispatch(removeFavorite(recipe)),
   selectCard: (recipe) => dispatch(selectCard(recipe))
 })
+
+Card.propTypes = {
+	addFavorite: PropTypes.func.isRequired,
+  removeFavorite: PropTypes.func.isRequired,
+  selectCard: PropTypes.func.isRequired,
+  favorites: PropTypes.array.isRequired,
+  recipe: PropTypes.object.isRequired
+}
 
 export default withRouter(connect(mapStateToProps, mapDispatchToProps)(Card))

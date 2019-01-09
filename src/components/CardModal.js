@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import '../styles/main.scss';
 
 export const CardModal = (props) => {
@@ -22,4 +23,8 @@ export const CardModal = (props) => {
 			<a href={recipe.url} target="_blank" rel="noopener noreferrer" className="link">Go To Full Recipe >></a>
 		</div>
 	)
+}
+
+CardModal.propTypes = {
+	recipe: PropTypes.object.isRequired
 }
