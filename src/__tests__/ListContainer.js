@@ -18,6 +18,13 @@ describe('ListContainer', () => {
 		expect(wrapper).toMatchSnapshot()
 	})
 
+	it('should display a message with no ingredients', () => {
+		wrapper = shallow(
+			<ListContainer ingredients={[]} />
+		)
+		expect(wrapper.find('h4').length).toEqual(1)
+	})
+
 	describe('mapStateToProps', () => {
 		it('should return an array of recipes and array of ingredients', () => {
 			const mockState = {

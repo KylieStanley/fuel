@@ -8,7 +8,7 @@ export const ListContainer = (props) => {
 	return (
 		<div className="card-container shopping">
 			<ul className="shopping-list">
-				{ingredientsList}
+				{ !ingredientsList.length ? <h4>You have no saved ingredients</h4> : ingredientsList }
 			</ul>
 		</div>
 	)
