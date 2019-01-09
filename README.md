@@ -1,68 +1,47 @@
+# Fuel  
+
+### Description of App:
+
+For this application, I was assigned the Edaman API and an audience of endurance athletes. Using React, Redux, Router, and Redux thunk middleware, I created this application to allow users to search and favorite recipes based on search parameters provided. Users can view recipe cards and open the external recipe links if more information is desired.
+
+### Technologies used:
+* React
+* Redux
+* React Router
+* Redux-Thunk Middleware
+* Jest
+* Enzyme
+
+### Setup:
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+#### Frontend
+Then, you can run the frontend server to view with the application
 
-In the project directory, you can run:
+* `git clone https://github.com/kyliestanley/fuel.git`
+* `cd fuel/`
+* `npm install`
+* `npm start`
 
-### `npm start`
-
-Runs the app in the development mode.<br>
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+### Testing
+In the movie-tracker directory, you can run the test files using:
+`npm test`
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Design and Layout
 
-### `npm run build`
+##### Wireframe:
+![image](https://user-images.githubusercontent.com/37158924/50881805-fd2fb200-139f-11e9-933b-3b9943993455.png)
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+![image](https://user-images.githubusercontent.com/37158924/50881825-0c166480-13a0-11e9-9170-3520401fd1eb.png)
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+![image](https://user-images.githubusercontent.com/37158924/50881839-16386300-13a0-11e9-91f4-0dc50ef6f7fd.png)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+##### My App:
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+![image](https://user-images.githubusercontent.com/37158924/50881910-54ce1d80-13a0-11e9-8511-a3dc4ed0cb0a.png)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+![image](https://user-images.githubusercontent.com/37158924/50881871-2fd9aa80-13a0-11e9-8c80-30fd0ccd25f0.png)
