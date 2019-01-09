@@ -48,6 +48,8 @@ ShallowWrapper {
       ],
       "className": "menu ",
       "onClick": [Function],
+      "role": "button",
+      "tabIndex": 0,
     },
     "ref": null,
     "rendered": Array [
@@ -147,6 +149,8 @@ ShallowWrapper {
         ],
         "className": "menu ",
         "onClick": [Function],
+        "role": "button",
+        "tabIndex": 0,
       },
       "ref": null,
       "rendered": Array [

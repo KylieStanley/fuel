@@ -30,7 +30,7 @@ export class Card extends Component {
 			<div className="card">
 				<div className="image" style={{ backgroundImage: `url(${recipe.image})` }} />
 				<div className="recipe-info">
-					<Link to={`${this.props.match.url}/modal`} onClick={() => selectCard(recipe)}>
+					<Link to={`${this.props.match.url}/modal`} onClick={selectCard.bind(null, recipe)}>
 						<h3 className="recipe-name">{recipe.name}</h3>
 					</Link>
 					<div className="card-bottom">

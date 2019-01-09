@@ -3,6 +3,8 @@ import { shallow } from 'enzyme'
 import { Card, mapStateToProps, mapDispatchToProps } from '../containers/Card'
 import { addFavorite, removeFavorite, selectCard } from '../actions'
 
+jest.mock('../actions')
+
 
 describe('Card', () => {
 	let wrapper
