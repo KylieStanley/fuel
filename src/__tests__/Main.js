@@ -1,5 +1,4 @@
 import React from 'react'
-import ReactDOM from 'react-dom';
 import { shallow } from 'enzyme'
 import { Main, mapStateToProps, mapDispatchToProps } from '../containers/Main'
 import { fetchRecipes } from '../thunks/fetchRecipes'

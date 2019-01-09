@@ -16,7 +16,7 @@ export const CardContainer = (props) => {
 
 	return (
 		<div className="card-container">
-			{ props.isLoading ? <img src="../loading.gif"/> : recipes.map(recipe => <Card key={recipe.url} recipe={recipe} />) }
+			{ props.isLoading ? <img src="../loading.gif" alt="spinning circle" /> : recipes.map(recipe => <Card key={recipe.url} recipe={recipe} />) }
 			{ error }
 		</div>
 	)

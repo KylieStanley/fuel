@@ -1,9 +1,8 @@
 import React from 'react'
 import { CardContainer, mapStateToProps } from '../containers/CardContainer'
-import ReactDOM from 'react-dom';
 import Card  from '../containers/Card'
-import { connect } from 'react-redux'
 import { shallow } from 'enzyme'
+
 
 describe('CardContainer', () => {
 	let wrapper
