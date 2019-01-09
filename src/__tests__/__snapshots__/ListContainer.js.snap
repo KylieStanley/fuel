@@ -75,7 +75,7 @@ ShallowWrapper {
       "rendered": Array [
         Object {
           "instance": null,
-          "key": undefined,
+          "key": "chicken",
           "nodeType": "host",
           "props": Object {
             "children": "chicken",
@@ -87,7 +87,7 @@ ShallowWrapper {
         },
         Object {
           "instance": null,
-          "key": undefined,
+          "key": "salt",
           "nodeType": "host",
           "props": Object {
             "children": "salt",
@@ -99,7 +99,7 @@ ShallowWrapper {
         },
         Object {
           "instance": null,
-          "key": undefined,
+          "key": "avocado",
           "nodeType": "host",
           "props": Object {
             "children": "avocado",
@@ -170,7 +170,7 @@ ShallowWrapper {
         "rendered": Array [
           Object {
             "instance": null,
-            "key": undefined,
+            "key": "chicken",
             "nodeType": "host",
             "props": Object {
               "children": "chicken",
@@ -182,7 +182,7 @@ ShallowWrapper {
           },
           Object {
             "instance": null,
-            "key": undefined,
+            "key": "salt",
             "nodeType": "host",
             "props": Object {
               "children": "salt",
@@ -194,7 +194,7 @@ ShallowWrapper {
           },
           Object {
             "instance": null,
-            "key": undefined,
+            "key": "avocado",
             "nodeType": "host",
             "props": Object {
               "children": "avocado",

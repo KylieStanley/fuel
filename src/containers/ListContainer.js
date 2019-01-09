@@ -3,7 +3,7 @@ import { connect } from 'react-redux'
 import PropTypes from 'prop-types'
 
 export const ListContainer = (props) => {
-	const ingredientsList = props.ingredients.map(ingredient => <li className="item">{ingredient}</li>)
+	const ingredientsList = props.ingredients.map(ingredient => <li key={ingredient} className="item">{ingredient}</li>)
 
 	return (
 		<div className="card-container shopping">
