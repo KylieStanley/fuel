@@ -12,7 +12,7 @@ describe('Main', () => {
 
 	beforeEach(() => {
 		mockRecipes = []
-		wrapper = shallow(<Main recipes={ mockRecipes } fetchRecipes={ jest.fn() } />)
+		wrapper = shallow(<Main recipes={mockRecipes} fetchRecipes={jest.fn()} />)
 	})
 
 	it('should match the snapshot', () => {
@@ -24,16 +24,16 @@ describe('Main', () => {
 	})
 
 	it('should not call fetchRecipes recipes in store from search', () => {
-		wrapper = shallow(<Main recipes={{ name: 'Chicken' }} fetchRecipes={ jest.fn() } />)
+		wrapper = shallow(<Main recipes={{ name: 'Chicken' }} fetchRecipes={jest.fn()} />)
 
 		expect(wrapper.instance().props.fetchRecipes).not.toHaveBeenCalled()
-	})	
+	})
 
 	describe('mapStateToProps', () => {
 		it('should return an array of recipes', () => {
 			const mockState = {
 				recipes: { name: 'chicken' },
-				favorites: { name: 'salmon'}
+				favorites: { name: 'salmon' }
 			}
 			const expected = { recipes: mockState.recipes }
 			const result = mapStateToProps(mockState)
@@ -47,13 +47,13 @@ describe('Main', () => {
 		beforeEach(() => {
 			mockDispatch = jest.fn()
 		})
-    
+
 		it('should call dispatch with the correct params', () => {
 			const url = 'recipes.com'
 			const actionToDispatch = fetchRecipes(url)
 			const result = mapDispatchToProps(mockDispatch)
 			result.fetchRecipes(url)
-			
+
 			expect(mockDispatch).toHaveBeenCalledWith(actionToDispatch)
 		})
 	})

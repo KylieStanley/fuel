@@ -8,7 +8,8 @@ describe('Menu', () => {
 
 	beforeEach(() => {
 		wrapper = shallow(
-			<Menu />)
+			<Menu />
+		)
 	})
 
 	it('should match the snapshot', () => {
@@ -18,7 +19,7 @@ describe('Menu', () => {
 	it('should change the state of expanded if toggled', () => {
 		wrapper.setState({ expanded: false })
 		wrapper.instance().toggleMenu()
-		
+
 		expect(wrapper.instance().state.expanded).toEqual(true)
 	})
 
@@ -37,9 +38,8 @@ describe('Menu', () => {
 	it('should toggle the state when clicked', () => {
 		const spy = jest.spyOn(wrapper.instance(), 'toggleMenu')
 		wrapper.instance().forceUpdate()
-		wrapper.find('.menu').simulate('click');
+		wrapper.find('.menu').simulate('click')
 
-		expect(spy).toHaveBeenCalled();
+		expect(spy).toHaveBeenCalled()
 	})
-
 })

@@ -1,8 +1,8 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import '../styles/main.scss';
+import '../styles/main.scss'
 
-export const CardModal = (props) => {
+const CardModal = (props) => {
 	const { recipe } = props
 	const ingredientList = recipe.ingredients.map(ingredient => <li key={ingredient}>{ ingredient }</li>)
 
@@ -16,15 +16,33 @@ export const CardModal = (props) => {
 			</div>
 			<div className="ingredients">
 				<h2 className="ingredients-title">Ingredients</h2>
-					<ul>
-						{ ingredientList }
-					</ul>
+				<ul>
+					{ ingredientList }
+				</ul>
 			</div>
-			<a href={recipe.url} target="_blank" rel="noopener noreferrer" className="link">Go To Full Recipe >></a>
+			<a
+				href={recipe.url}
+				target="_blank"
+				rel="noopener noreferrer"
+				className="link"
+			>Go To Full Recipe
+				<i className="fas fa-angle-double-right" />
+			</a>
 		</div>
 	)
 }
 
 CardModal.propTypes = {
-	recipe: PropTypes.object.isRequired
+	recipe: PropTypes.shape({
+		name: PropTypes.string,
+		yield: PropTypes.number,
+		calories: PropTypes.number,
+		dietLabel: PropTypes.array,
+		url: PropTypes.string,
+		image: PropTypes.string,
+		source: PropTypes.string,
+		ingredients: PropTypes.array
+	}).isRequired
 }
+
+export default CardModal

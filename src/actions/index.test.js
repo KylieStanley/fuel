@@ -1,11 +1,11 @@
-import * as actions from './index';
+import * as actions from './index'
 
 describe('actions', () => {
 	it('should have a type of ADD_FAVORITE with a favorite Object', () => {
 		const favorite = { name: 'Chicken Pasta' }
 		const expected = {
 			type: 'ADD_FAVORITE',
-			favorite,
+			favorite
 		}
 
 		const result = actions.addFavorite(favorite)
@@ -16,7 +16,7 @@ describe('actions', () => {
 		const favorite = { name: 'Chicken Pasta' }
 		const expected = {
 			type: 'REMOVE_FAVORITE',
-			favorite,
+			favorite
 		}
 
 		const result = actions.removeFavorite(favorite)
@@ -27,7 +27,7 @@ describe('actions', () => {
 		const isLoading = true
 		const expected = {
 			type: 'IS_LOADING',
-			isLoading,
+			isLoading
 		}
 
 		const result = actions.isLoading(isLoading)
@@ -38,7 +38,7 @@ describe('actions', () => {
 		const message = 'error retrieving info'
 		const expected = {
 			type: 'HAS_ERRORED',
-			message,
+			message
 		}
 
 		const result = actions.hasErrored(message)
@@ -49,7 +49,7 @@ describe('actions', () => {
 		const recipes = [{ name: 'chicken' }]
 		const expected = {
 			type: 'FETCH_RECIPE_SUCCESS',
-			recipes,
+			recipes
 		}
 
 		const result = actions.fetchRecipeSuccess(recipes)
@@ -60,7 +60,7 @@ describe('actions', () => {
 		const recipe = { name: 'chicken' }
 		const expected = {
 			type: 'SELECT_CARD',
-			recipe,
+			recipe
 		}
 
 		const result = actions.selectCard(recipe)

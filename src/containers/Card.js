@@ -8,8 +8,9 @@ import '../styles/main.scss'
 
 export class Card extends Component {
 	toggleFavorite = () => {
-
-		const { favorites, recipe, removeFavorite, addFavorite, selectCard } = this.props
+		const {
+			favorites, recipe, removeFavorite, addFavorite
+		} = this.props
 
 		const match = favorites.find(favorite => favorite.url === recipe.url)
 
@@ -24,7 +25,7 @@ export class Card extends Component {
 		const { favorites, recipe, selectCard } = this.props
 		const favorite = favorites.find(favorite => favorite.url === recipe.url)
 		const favoriteClass = favorite ? <i className="favorite fas fa-heart" /> : <i className="far fa-heart" />
-		
+
 		return (
 			<div className="card">
 				<div className="image" style={{ backgroundImage: `url(${recipe.image})` }} />
@@ -58,8 +59,17 @@ Card.propTypes = {
 	addFavorite: PropTypes.func.isRequired,
 	removeFavorite: PropTypes.func.isRequired,
 	selectCard: PropTypes.func.isRequired,
-	favorites: PropTypes.array.isRequired,
-	recipe: PropTypes.object.isRequired
+	favorites: PropTypes.arrayOf(PropTypes.object).isRequired,
+	recipe: PropTypes.shape({
+		name: PropTypes.string,
+		yield: PropTypes.number,
+		calories: PropTypes.number,
+		dietLabel: PropTypes.array,
+		url: PropTypes.string,
+		image: PropTypes.string,
+		source: PropTypes.string,
+		ingredients: PropTypes.array
+	}).isRequired
 }
 
 export default withRouter(connect(mapStateToProps, mapDispatchToProps)(Card))

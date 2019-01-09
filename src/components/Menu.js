@@ -19,11 +19,11 @@ export class Menu extends Component {
 		const toggled = this.state.expanded ? 'toggled' : ''
 
 		return (
-			<div className={`menu ${toggled}`} onClick={this.toggleMenu}>
+			<div className={`menu ${toggled}`} role="button" tabIndex={0} onClick={this.toggleMenu}>
 				<div className="hamburger" />
-				<NavLink to='/main' className="menu-item home">Home</NavLink>
-				<NavLink to='/favorites' className="menu-item faves">Favorites</NavLink>
-				<NavLink to='/shopping' className="menu-item list">Shopping List</NavLink>
+				<NavLink to="/main" className="menu-item home">Home</NavLink>
+				<NavLink to="/favorites" className="menu-item faves">Favorites</NavLink>
+				<NavLink to="/shopping" className="menu-item list">Shopping List</NavLink>
 			</div>
 		)
 	}

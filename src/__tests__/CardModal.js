@@ -1,6 +1,6 @@
 import React from 'react'
 import { shallow } from 'enzyme'
-import { CardModal } from '../components/CardModal'
+import CardModal from '../components/CardModal'
 
 describe('Card', () => {
 	let wrapper
@@ -8,15 +8,16 @@ describe('Card', () => {
 
 	beforeEach(() => {
 		mockRecipe = {
-			name: 'chicken pasta', 
-			url: 'chicken.com', 
-			dietLabel: ['Low Carb'], 
-			ingredients: ['chicken', 'beef'] 
+			name: 'chicken pasta',
+			url: 'chicken.com',
+			dietLabel: ['Low Carb'],
+			ingredients: ['chicken', 'beef']
 		}
 
 		wrapper = shallow(
-			<CardModal recipe={ mockRecipe } />)
-		})
+			<CardModal recipe={mockRecipe} />
+		)
+	})
 
 	it('should match the snapshot', () => {
 		expect(wrapper).toMatchSnapshot()

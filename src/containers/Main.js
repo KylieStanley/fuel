@@ -42,7 +42,7 @@ export const mapDispatchToProps = (dispatch) => ({
 })
 
 Main.propTypes = {
-	recipes: PropTypes.arrayOf(Object).isRequired,
+	recipes: PropTypes.arrayOf(PropTypes.object).isRequired,
 	fetchRecipes: PropTypes.func.isRequired
 }
 

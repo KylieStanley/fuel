@@ -76,6 +76,7 @@ ShallowWrapper {
             <button
               className="fave-btn"
               onClick={[Function]}
+              type="button"
             >
               <i
                 className="favorite fas fa-heart"
@@ -128,6 +129,7 @@ ShallowWrapper {
               <button
                 className="fave-btn"
                 onClick={[Function]}
+                type="button"
               >
                 <i
                   className="favorite fas fa-heart"
@@ -180,6 +182,7 @@ ShallowWrapper {
                 <button
                   className="fave-btn"
                   onClick={[Function]}
+                  type="button"
                 >
                   <i
                     className="favorite fas fa-heart"
@@ -205,6 +208,7 @@ ShallowWrapper {
                   />,
                   "className": "fave-btn",
                   "onClick": [Function],
+                  "type": "button",
                 },
                 "ref": null,
                 "rendered": Object {
@@ -275,6 +279,7 @@ ShallowWrapper {
               <button
                 className="fave-btn"
                 onClick={[Function]}
+                type="button"
               >
                 <i
                   className="favorite fas fa-heart"
@@ -327,6 +332,7 @@ ShallowWrapper {
                 <button
                   className="fave-btn"
                   onClick={[Function]}
+                  type="button"
                 >
                   <i
                     className="favorite fas fa-heart"
@@ -379,6 +385,7 @@ ShallowWrapper {
                   <button
                     className="fave-btn"
                     onClick={[Function]}
+                    type="button"
                   >
                     <i
                       className="favorite fas fa-heart"
@@ -404,6 +411,7 @@ ShallowWrapper {
                     />,
                     "className": "fave-btn",
                     "onClick": [Function],
+                    "type": "button",
                   },
                   "ref": null,
                   "rendered": Object {

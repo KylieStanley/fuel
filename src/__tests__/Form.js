@@ -11,22 +11,22 @@ describe('Form', () => {
 	let wrapper
 
 	beforeEach(() => {
-		wrapper = shallow(<Form fetchRecipes={ jest.fn() }/>)
+		wrapper = shallow(<Form fetchRecipes={jest.fn()} />)
 	})
 
 	it('should match the snapshot', () => {
 		expect(wrapper).toMatchSnapshot()
 	})
 
-	it('simulates text change in input box',() => {
-		const mockData = { target: {value: 'Chicken'}}
+	it('simulates text change in input box', () => {
+		const mockData = { target: { value: 'Chicken' } }
 		const spy = jest.spyOn(wrapper.instance(), 'handleChange')
-		wrapper.instance().forceUpdate();
-		const input = wrapper.find('input');
-		input.simulate('change', mockData);
+		wrapper.instance().forceUpdate()
+		const input = wrapper.find('input')
+		input.simulate('change', mockData)
 
 		expect(spy).toHaveBeenCalled()
-	});
+	})
 
 	it('should call handleSubmit', () => {
 		const spy = jest.spyOn(wrapper.instance(), 'handleSubmit')
@@ -75,7 +75,7 @@ describe('Form', () => {
 			const result = mapDispatchToProps(mockDispatch)
 
 			result.fetchRecipes(url)
-			
+
 			expect(mockDispatch).toHaveBeenCalledWith(actionToDispatch)
 		})
 	})

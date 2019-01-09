@@ -7,7 +7,8 @@ describe('List', () => {
 
 	beforeEach(() => {
 		wrapper = shallow(
-			<List />)
+			<List />
+		)
 	})
 
 	it('should match the snapshot', () => {

@@ -10,18 +10,18 @@ describe('Card', () => {
 	let mockFavorites
 
 	beforeEach(() => {
-		mockRecipe = {name: 'chicken pasta', url: 'chicken.com', dietLabel: ['Low Carb'] }
-		mockFavorites = [{name: 'chicken pasta', url: 'chicken.com'}, 
-			{name: 'salmon steak', url: 'fish.jpg'}]
+		mockRecipe = { name: 'chicken pasta', url: 'chicken.com', dietLabel: ['Low Carb'] }
+		mockFavorites = [{ name: 'chicken pasta', url: 'chicken.com' }, { name: 'salmon steak', url: 'fish.jpg' }]
 		wrapper = shallow(
-			<Card 
-				recipe={ mockRecipe }
-				favorites={ mockFavorites }
-				addFavorite={ jest.fn() }
-				removeFavorite={ jest.fn() }
-				selectCard={ jest.fn() }
-				match={ {url: '/'} }
-			/>)
+			<Card
+				recipe={mockRecipe}
+				favorites={mockFavorites}
+				addFavorite={jest.fn()}
+				removeFavorite={jest.fn()}
+				selectCard={jest.fn()}
+				match={{ url: '/' }}
+			/>
+		)
 	})
 
 	it('should match the snapshot', () => {
@@ -31,39 +31,40 @@ describe('Card', () => {
 	it('should run toggle favorite on click of the heart', () => {
 		const spy = jest.spyOn(wrapper.instance(), 'toggleFavorite')
 		wrapper.instance().forceUpdate()
-		wrapper.find('button').simulate('click');
+		wrapper.find('button').simulate('click')
 
-		expect(spy).toHaveBeenCalled();
+		expect(spy).toHaveBeenCalled()
 	})
 
 	it('should call removeFavorite if there is a match', () => {
 		wrapper.instance().toggleFavorite()
 
-		expect(wrapper.instance().props.removeFavorite).toHaveBeenCalledWith(mockRecipe);
+		expect(wrapper.instance().props.removeFavorite).toHaveBeenCalledWith(mockRecipe)
 	})
 
-	 it('should call addFavorite if there is no match', () => {
-		mockRecipe = {name: 'chicken pasta', url: 'salmon.com', dietLabel: ['Low Carb']}
+	it('should call addFavorite if there is no match', () => {
+		mockRecipe = { name: 'chicken pasta', url: 'salmon.com', dietLabel: ['Low Carb'] }
 		wrapper = shallow(
-			<Card 
-				recipe={ mockRecipe }
-				favorites={ mockFavorites }
-				addFavorite={ jest.fn() }
-				removeFavorite={ jest.fn() }
-				selectCard={ jest.fn() }
-				match={ {url: '/'} }
-			/>)
+			<Card
+				recipe={mockRecipe}
+				favorites={mockFavorites}
+				addFavorite={jest.fn()}
+				removeFavorite={jest.fn()}
+				selectCard={jest.fn()}
+				match={{ url: '/' }}
+			/>
+		)
 
 		wrapper.instance().toggleFavorite()
 
-		expect(wrapper.instance().props.addFavorite).toHaveBeenCalledWith(mockRecipe);
+		expect(wrapper.instance().props.addFavorite).toHaveBeenCalledWith(mockRecipe)
 	})
 
 	describe('mapStateToProps', () => {
 		it('should return an array of favorites', () => {
 			const mockState = {
 				recipes: { name: 'chicken' },
-				favorites: { name: 'salmon'},
+				favorites: { name: 'salmon' }
 			}
 			const expected = { favorites: mockState.favorites }
 			const result = mapStateToProps(mockState)

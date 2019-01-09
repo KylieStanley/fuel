@@ -1,25 +1,24 @@
 import React from 'react'
-import { List } from '../components/List'
-import Main  from '../containers/Main'
-import ErrorPage  from '../components/ErrorPage'
-import { App, mapStateToProps }  from '../containers/App'
-import Splash from '../components/Splash'
 import { shallow, mount } from 'enzyme'
-import { Route } from 'react-router-dom'
+import { Route, MemoryRouter } from 'react-router-dom'
 import { Provider } from 'react-redux'
-import { MemoryRouter } from 'react-router-dom'
-import { ModalContainer, ModalRoute } from 'react-router-modal';
+import { ModalContainer, ModalRoute } from 'react-router-modal'
+import { List } from '../components/List'
+import Main from '../containers/Main'
+import ErrorPage from '../components/ErrorPage'
+import { App, mapStateToProps } from '../containers/App'
+import Splash from '../components/Splash'
 
 
 jest.mock('../containers/CardContainer')
-jest.mock('../containers/Main',() => () => <div />)
+jest.mock('../containers/Main', () => () => <div />)
 
 
 describe('App', () => {
 	let wrapper
 
 	beforeEach(() => {
-		wrapper = shallow(<App selectedCard={{name: 'chicken', source: 'Good Eats'}} history={{ goBack: jest.fn() }} />)
+		wrapper = shallow(<App selectedCard={{ name: 'chicken', source: 'Good Eats' }} history={{ goBack: jest.fn() }} />)
 	})
 
 	it('should match the snapshot', () => {
@@ -44,16 +43,23 @@ describe('App', () => {
 		let mockRecipes
 
 		beforeEach(() => {
-			mockRecipe = {name: 'chicken', source: 'Good Eats'}
+			mockRecipe = { name: 'chicken', source: 'Good Eats' }
 			mockRecipes = [mockRecipe]
-			mockStore = { getState: jest.fn(), subscribe: jest.fn(), recipes: mockRecipes, selectedCard: mockRecipe, favorites: mockRecipes, dispatch: jest.fn() } 
+			mockStore = {
+				getState: jest.fn(),
+				subscribe: jest.fn(),
+				recipes: mockRecipes,
+				selectedCard: mockRecipe,
+				favorites: mockRecipes,
+				dispatch: jest.fn()
+			}
 		})
 
 		it('routes /favorites to the List component', () => {
-			const wrapper = mount(
+			wrapper = mount(
 				<Provider store={mockStore}>
 					<MemoryRouter initialEntries={['/favorites']}>
-						<App selectedCard={ mockRecipe } history={{ goBack: jest.fn() }} />
+						<App selectedCard={mockRecipe} history={{ goBack: jest.fn() }} />
 					</MemoryRouter>
 				</Provider>
 			)
@@ -61,10 +67,10 @@ describe('App', () => {
 		})
 
 		it('routes /shopping to the List component', () => {
-			const wrapper = mount(
+			wrapper = mount(
 				<Provider store={mockStore}>
 					<MemoryRouter initialEntries={['/shopping']}>
-						<App selectedCard={ mockRecipe } history={{ goBack: jest.fn() }} />
+						<App selectedCard={mockRecipe} history={{ goBack: jest.fn() }} />
 					</MemoryRouter>
 				</Provider>
 			)
@@ -72,10 +78,10 @@ describe('App', () => {
 		})
 
 		it('routes /main to the Main component', () => {
-			const wrapper = mount(
+			wrapper = mount(
 				<Provider store={mockStore}>
 					<MemoryRouter initialEntries={['/main']}>
-						<App selectedCard={ mockRecipe } history={{ goBack: jest.fn() }} />
+						<App selectedCard={mockRecipe} history={{ goBack: jest.fn() }} />
 					</MemoryRouter>
 				</Provider>
 			)
@@ -83,10 +89,10 @@ describe('App', () => {
 		})
 
 		it('routes / to the Splash component', () => {
-			const wrapper = mount(
+			wrapper = mount(
 				<Provider store={mockStore}>
 					<MemoryRouter initialEntries={['/']}>
-						<App selectedCard={ mockRecipe } history={{ goBack: jest.fn() }}/>
+						<App selectedCard={mockRecipe} history={{ goBack: jest.fn() }} />
 					</MemoryRouter>
 				</Provider>
 			)
@@ -94,10 +100,10 @@ describe('App', () => {
 		})
 
 		it('routes /error to the ErrorPage component', () => {
-			const wrapper = mount(
+			wrapper = mount(
 				<Provider store={mockStore}>
 					<MemoryRouter initialEntries={['/error']}>
-						<App selectedCard={ mockRecipe } history={{ goBack: jest.fn() }}/>
+						<App selectedCard={mockRecipe} history={{ goBack: jest.fn() }} />
 					</MemoryRouter>
 				</Provider>
 			)
@@ -109,7 +115,7 @@ describe('App', () => {
 		it('should return a state with a card selected', () => {
 			const mockState = {
 				selectedCard: { name: 'chicken' },
-				recipes: [{ name: 'salmon'}]
+				recipes: [{ name: 'salmon' }]
 			}
 			const expected = { selectedCard: mockState.selectedCard }
 			const result = mapStateToProps(mockState)

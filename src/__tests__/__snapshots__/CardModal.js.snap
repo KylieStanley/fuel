@@ -73,7 +73,10 @@ ShallowWrapper {
           rel="noopener noreferrer"
           target="_blank"
         >
-          Go To Full Recipe &gt;&gt;
+          Go To Full Recipe
+          <i
+            className="fas fa-angle-double-right"
+          />
         </a>,
       ],
       "className": "expanded-card",
@@ -251,14 +254,32 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": "Go To Full Recipe >>",
+          "children": Array [
+            "Go To Full Recipe",
+            <i
+              className="fas fa-angle-double-right"
+            />,
+          ],
           "className": "link",
           "href": "chicken.com",
           "rel": "noopener noreferrer",
           "target": "_blank",
         },
         "ref": null,
-        "rendered": "Go To Full Recipe >>",
+        "rendered": Array [
+          "Go To Full Recipe",
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "className": "fas fa-angle-double-right",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "i",
+          },
+        ],
         "type": "a",
       },
     ],
@@ -312,7 +333,10 @@ ShallowWrapper {
             rel="noopener noreferrer"
             target="_blank"
           >
-            Go To Full Recipe &gt;&gt;
+            Go To Full Recipe
+            <i
+              className="fas fa-angle-double-right"
+            />
           </a>,
         ],
         "className": "expanded-card",
@@ -490,14 +514,32 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": "Go To Full Recipe >>",
+            "children": Array [
+              "Go To Full Recipe",
+              <i
+                className="fas fa-angle-double-right"
+              />,
+            ],
             "className": "link",
             "href": "chicken.com",
             "rel": "noopener noreferrer",
             "target": "_blank",
           },
           "ref": null,
-          "rendered": "Go To Full Recipe >>",
+          "rendered": Array [
+            "Go To Full Recipe",
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "className": "fas fa-angle-double-right",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "i",
+            },
+          ],
           "type": "a",
         },
       ],

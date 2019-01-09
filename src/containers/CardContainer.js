@@ -31,8 +31,8 @@ export const mapStateToProps = (state) => ({
 
 CardContainer.propTypes = {
 	isLoading: PropTypes.bool.isRequired,
-	recipes: PropTypes.array.isRequired,
-	favorites: PropTypes.array.isRequired
+	recipes: PropTypes.arrayOf(PropTypes.object).isRequired,
+	favorites: PropTypes.arrayOf(PropTypes.object).isRequired
 }
 
 export default connect(mapStateToProps)(CardContainer)
