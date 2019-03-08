@@ -1,5 +1,5 @@
 .splash {
-	background: url('../utils/background.jpg');
+	background: url('../utils/fuel_bg.png');
 	background-size: cover;
 	background-position: center;
 	background-repeat: repeat;
@@ -10,20 +10,4 @@
 	align-items: center;
 	display: flex;
 	justify-content: center;
-}
-
-.overlay {
-	position: fixed;
-	opacity: .7;
-	height: 100%;
-	width: 100%;
-	background-color: white;
-}
-
-.splash-green {
-	height: 100%;
-	width: 250%;
-	position: absolute;
-	background-color: #A7FFC0;
-	transform: rotate(-27deg) translateX(-55px) translateY(-480px);
 }

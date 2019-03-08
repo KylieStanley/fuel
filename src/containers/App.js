@@ -15,8 +15,6 @@ import 'react-router-modal/css/react-router-modal.css'
 export const App = (props) => {
 	return (
 		<div className="splash">
-			<div className="overlay" />
-			<div className="splash-green" />
 			<Switch>
 				<Route exact path="/" component={Splash} />
 				<Route path="/main" component={Main} />
