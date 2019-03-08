@@ -47,5 +47,6 @@
       "!src/serviceWorker.js",
       "!src/reducers/index.js"
     ]
-  }
+  },
+  "homepage": "."
 }
